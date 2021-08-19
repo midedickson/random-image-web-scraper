@@ -5,7 +5,6 @@ from googlesearch import search
 from rest_framework.decorators import api_view
 import json
 import re
-from random import randint
 from pathlib import Path
 import requests
 import bs4
@@ -32,22 +31,22 @@ def send_random_photos(request):
 
 
 def search_google(query):
-    search_results = search(query=query, tld="com",
-                            num=10, pause=6.0, stop=10)
-    list = []
-    for i in search_results:
-        list.append(i)
-    print(list)
-    print("listlistlistlistlistlistlist")
-    response = requests.get(list[randint(0, len(list)-1)])
-    soup = bs4.BeautifulSoup(response.text, 'html.parser')
-    BASE_DIR = Path(__file__).resolve().parent
-    filePath = Path.joinpath(BASE_DIR, 'html.html')
-    file = open(filePath, 'w+')
-    file.write(str(soup))
-    all_img = soup.find_all("img", alt=re.compile("dog"))
-    for img in all_img:
-        AdPhoto.objects.create(photo=img["src"], keywords=query)
-    return all_img
+    img_src_list = []
+    while len(img_src_list) == 0:
+        search_results = search(query=query, tld="com",
+                                num=10, pause=6.0, stop=10)
+        list = []
+        for i in search_results:
+            list.append(i)
+        print(list)
+        print("listlistlistlistlistlistlist")
+        for url in list:
+            response = requests.get(url)
+            soup = bs4.BeautifulSoup(response.text, 'html.parser')
+            all_img = soup.find_all("img", alt=re.compile("dog"))
+            for img in all_img:
+                AdPhoto.objects.create(photo=img["src"], keywords=query)
+                img_src_list.append(img["src"])
+    return img_src_list
 
     # print(soup)
