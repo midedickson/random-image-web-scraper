@@ -23,8 +23,9 @@ def send_random_photos(request):
     if request.method == "POST":
         query_payload = json.loads(request.body)["query"]
         img_data = []
-        for img in search_google(query_payload):
-            img_data.append(img["src"])
+        while len(img_data) == 0:
+            for img in search_google(query_payload):
+                img_data.append(img["src"])
         return Response({
             "data": img_data
         }, status=200)
