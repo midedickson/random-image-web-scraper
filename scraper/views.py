@@ -43,8 +43,8 @@ def search_google(query):
 
 def scrape_fb_ads():
     img_src_list = []
-    while len(img_src_list) == 0:
-        response = requests.get("https://graph.facebook.com/v11.0/ads_archive?search_terms='money'&ad_reached_countries=['US']&fields=id,ad_creation_time,ad_creative_body,ad_creative_link_caption,ad_creative_link_description,ad_creative_link_title,ad_delivery_start_time,ad_delivery_stop_time,ad_snapshot_url,currency,demographic_distribution,funding_entity,impressions,languages,page_id,page_name,potential_reach,publisher_platforms,spend&limit=100&access_token=EAAN04fZCp9g8BAKCnu2DML2jUH8fh46E4Oz3vKe93A4yeFKhME8zN071d81toxSg8sjRFK2ZAVmv2Mx7lKFY4pLxTzLUYWjCSBE62he832YTYlIZAC5pD9dEVHI6xXR3SFJFtMsZBU3YTs3cgmTycQ2XHUI97WKYfgnyiUM3Vc1f424LbZBirfdczmb1QRDAZD")
-        print(response)
+    # while len(img_src_list) == 0:
+    response = requests.get("https://graph.facebook.com/v11.0/ads_archive?search_terms='money'&ad_reached_countries=['US']&fields=id,ad_creation_time,ad_creative_body,ad_creative_link_caption,ad_creative_link_description,ad_creative_link_title,ad_delivery_start_time,ad_delivery_stop_time,ad_snapshot_url,currency,demographic_distribution,funding_entity,impressions,languages,page_id,page_name,potential_reach,publisher_platforms,spend&limit=100&access_token=EAAN04fZCp9g8BAKCnu2DML2jUH8fh46E4Oz3vKe93A4yeFKhME8zN071d81toxSg8sjRFK2ZAVmv2Mx7lKFY4pLxTzLUYWjCSBE62he832YTYlIZAC5pD9dEVHI6xXR3SFJFtMsZBU3YTs3cgmTycQ2XHUI97WKYfgnyiUM3Vc1f424LbZBirfdczmb1QRDAZD")
+    print(response)
 
     # print(soup)
