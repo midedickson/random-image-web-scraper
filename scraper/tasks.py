@@ -1,4 +1,4 @@
-from huey.contrib.djhuey import db_task
+from huey.contrib.djhuey import task
 from scraper.models import Ad
 from django.shortcuts import render
 from googlesearch import search
@@ -11,7 +11,7 @@ import bs4
 from rest_framework.response import Response
 
 
-@db_task
+@task()
 def scrape_fb_ad(html, adId: Ad):
     try:
         Ad.objects.get(ad_id=adId)

@@ -77,5 +77,794 @@
         "country_iso_code": "US",
         "instagram_branded_content": null
     },
-    "ad body": "When people are forced to flee their homes, UNHCR is there to help resilient refugees rebuild their lives. Will you join us? <br /> <br /> Every month, your ongoing support will provide clean water, food, shelter and protection to families in need around the world."
+    "ad body": "When people are forced to flee their homes, UNHCR is there to help resilient refugees rebuild their lives. Will you join us? <br /> <br /> Every month, your ongoing support will provide clean water, food, shelter and protection to families in need around the world.",
+    "define": {
+        "define": [
+            [
+                "LinkshimHandlerConfig",
+                [],
+                {
+                    "supports_meta_referrer": false,
+                    "default_meta_referrer_policy": "default",
+                    "switched_meta_referrer_policy": "origin",
+                    "non_linkshim_lnfb_mode": "ie",
+                    "link_react_default_hash": "AT3VJWHdpz2A0auP47IKYKuzWT9urUkVPHV3NT1kn0V37bLqMzNNBHScjuhlxNLiJ4DytHZC2HGqU5LouW8-g96BFxSlvtag4sW4mUGUgzpdQz7GU0B2NehsBNAR2lUX_uqSp5yQOdEj_YL3",
+                    "untrusted_link_default_hash": "AT0pU9eVz02GUVBoUdOGcsM4uT1ygHYrJIVshxE_OiMCjKeLvwVyUcSSU3ix-UjqlLe3OIyVfQdo0Z1ft87ueO-4Puk_AbYbye9ssoYolUWtcHKCwOotkJTGLu21BEjq1rlvq8lBHDF2j6PO",
+                    "linkshim_host": "l.facebook.com",
+                    "linkshim_path": "/l.php",
+                    "linkshim_enc_param": "h",
+                    "linkshim_url_param": "u",
+                    "use_rel_no_opener": false,
+                    "always_use_https": true,
+                    "onion_always_shim": true,
+                    "middle_click_requires_event": false,
+                    "www_safe_js_mode": "hover",
+                    "m_safe_js_mode": null,
+                    "ghl_param_link_shim": false,
+                    "click_ids": [],
+                    "is_linkshim_supported": true,
+                    "current_domain": "facebook.com",
+                    "blocklisted_domains": [
+                        "ad.doubleclick.net",
+                        "ads-encryption-url-example.com",
+                        "bs.serving-sys.com",
+                        "ad.atdmt.com",
+                        "adform.net",
+                        "ad13.adfarm1.adition.com",
+                        "ilovemyfreedoms.com",
+                        "secure.adnxs.com"
+                    ],
+                    "is_mobile_device": false
+                },
+                27
+            ]
+        ],
+        "instances": [
+            [
+                "__inst_5b4d0c00_0_0_Z+",
+                [
+                    "Menu",
+                    "XUIMenuWithSquareCorner",
+                    "XUIMenuTheme"
+                ],
+                [
+                    [],
+                    {
+                        "id": "u_0_0_T7",
+                        "behaviors": [
+                            {
+                                "__m": "XUIMenuWithSquareCorner"
+                            }
+                        ],
+                        "theme": {
+                            "__m": "XUIMenuTheme"
+                        }
+                    }
+                ],
+                2
+            ],
+            [
+                "__inst_5b4d0c00_0_1_+f",
+                [
+                    "Menu",
+                    "MenuItem",
+                    "__markup_3310c079_0_0_iQ",
+                    "HTML",
+                    "__markup_3310c079_0_1_1O",
+                    "__markup_3310c079_0_2_t7",
+                    "__markup_3310c079_0_3_Rf",
+                    "XUIMenuWithSquareCorner",
+                    "XUIMenuTheme"
+                ],
+                [
+                    [
+                        {
+                            "value": "key_shortcuts",
+                            "ctor": {
+                                "__m": "MenuItem"
+                            },
+                            "markup": {
+                                "__m": "__markup_3310c079_0_0_iQ"
+                            },
+                            "label": "Keyboard shortcut help...",
+                            "title": "",
+                            "className": null
+                        },
+                        {
+                            "href": "/help/accessibility",
+                            "target": "_blank",
+                            "value": "help_center",
+                            "ctor": {
+                                "__m": "MenuItem"
+                            },
+                            "markup": {
+                                "__m": "__markup_3310c079_0_1_1O"
+                            },
+                            "label": "Accessibility Help Centre",
+                            "title": "",
+                            "className": null
+                        },
+                        {
+                            "href": "/help/contact/accessibility",
+                            "target": "_blank",
+                            "value": "submit_feedback",
+                            "ctor": {
+                                "__m": "MenuItem"
+                            },
+                            "markup": {
+                                "__m": "__markup_3310c079_0_2_t7"
+                            },
+                            "label": "Submit feedback",
+                            "title": "",
+                            "className": null
+                        },
+                        {
+                            "href": "/accessibility",
+                            "target": "_blank",
+                            "value": "facebook_page",
+                            "ctor": {
+                                "__m": "MenuItem"
+                            },
+                            "markup": {
+                                "__m": "__markup_3310c079_0_3_Rf"
+                            },
+                            "label": "Updates from Facebook Accessibility",
+                            "title": "",
+                            "className": null
+                        }
+                    ],
+                    {
+                        "id": "u_0_1_Az",
+                        "behaviors": [
+                            {
+                                "__m": "XUIMenuWithSquareCorner"
+                            }
+                        ],
+                        "theme": {
+                            "__m": "XUIMenuTheme"
+                        }
+                    }
+                ],
+                2
+            ],
+            [
+                "__inst_e5ad243d_0_0_kp",
+                [
+                    "PopoverMenu",
+                    "__inst_1de146dc_0_1_wn",
+                    "__elem_ec77afbd_0_1_1h",
+                    "__inst_5b4d0c00_0_1_+f"
+                ],
+                [
+                    {
+                        "__m": "__inst_1de146dc_0_1_wn"
+                    },
+                    {
+                        "__m": "__elem_ec77afbd_0_1_1h"
+                    },
+                    {
+                        "__m": "__inst_5b4d0c00_0_1_+f"
+                    },
+                    []
+                ],
+                2
+            ],
+            [
+                "__inst_e5ad243d_0_1_17",
+                [
+                    "PopoverMenu",
+                    "__inst_1de146dc_0_0_x/",
+                    "__elem_ec77afbd_0_0_wE",
+                    "__inst_5b4d0c00_0_0_Z+"
+                ],
+                [
+                    {
+                        "__m": "__inst_1de146dc_0_0_x/"
+                    },
+                    {
+                        "__m": "__elem_ec77afbd_0_0_wE"
+                    },
+                    {
+                        "__m": "__inst_5b4d0c00_0_0_Z+"
+                    },
+                    []
+                ],
+                2
+            ],
+            [
+                "__inst_1de146dc_0_0_x/",
+                [
+                    "Popover",
+                    "__elem_1de146dc_0_0_wK",
+                    "__elem_ec77afbd_0_0_wE",
+                    "ContextualLayerAutoFlip",
+                    "ContextualDialogArrow"
+                ],
+                [
+                    {
+                        "__m": "__elem_1de146dc_0_0_wK"
+                    },
+                    {
+                        "__m": "__elem_ec77afbd_0_0_wE"
+                    },
+                    [
+                        {
+                            "__m": "ContextualLayerAutoFlip"
+                        },
+                        {
+                            "__m": "ContextualDialogArrow"
+                        }
+                    ],
+                    {
+                        "alignh": "left",
+                        "position": "below"
+                    }
+                ],
+                2
+            ],
+            [
+                "__inst_1de146dc_0_1_wn",
+                [
+                    "Popover",
+                    "__elem_1de146dc_0_1_9v",
+                    "__elem_ec77afbd_0_1_1h",
+                    "ContextualLayerAutoFlip",
+                    "ContextualDialogArrow"
+                ],
+                [
+                    {
+                        "__m": "__elem_1de146dc_0_1_9v"
+                    },
+                    {
+                        "__m": "__elem_ec77afbd_0_1_1h"
+                    },
+                    [
+                        {
+                            "__m": "ContextualLayerAutoFlip"
+                        },
+                        {
+                            "__m": "ContextualDialogArrow"
+                        }
+                    ],
+                    {
+                        "alignh": "right",
+                        "position": "below"
+                    }
+                ],
+                2
+            ]
+        ],
+        "markup": [
+            [
+                "__markup_3310c079_0_0_iQ",
+                {
+                    "__html": "Keyboard shortcut help..."
+                },
+                1
+            ],
+            [
+                "__markup_3310c079_0_1_1O",
+                {
+                    "__html": "Accessibility Help Centre"
+                },
+                1
+            ],
+            [
+                "__markup_3310c079_0_2_t7",
+                {
+                    "__html": "Submit feedback"
+                },
+                1
+            ],
+            [
+                "__markup_3310c079_0_3_Rf",
+                {
+                    "__html": "Updates from Facebook Accessibility"
+                },
+                1
+            ]
+        ],
+        "elements": [
+            [
+                "__elem_835c633a_0_0_7R",
+                "login_form",
+                1
+            ],
+            [
+                "__elem_1edd4980_0_0_l5",
+                "loginbutton",
+                1
+            ],
+            [
+                "__elem_f46f4946_0_0_NW",
+                "u_0_3_Z0",
+                1
+            ],
+            [
+                "__elem_f46f4946_0_1_rh",
+                "u_0_4_OA",
+                1
+            ],
+            [
+                "__elem_a588f507_0_1_cx",
+                "u_0_5_U0",
+                1
+            ],
+            [
+                "__elem_3fc3da18_0_0_nZ",
+                "u_0_6_oj",
+                1
+            ],
+            [
+                "__elem_51be6cb7_0_0_2I",
+                "u_0_7_YM",
+                1
+            ],
+            [
+                "__elem_1de146dc_0_0_wK",
+                "u_0_8_xe",
+                1
+            ],
+            [
+                "__elem_ec77afbd_0_0_wE",
+                "u_0_9_e0",
+                2
+            ],
+            [
+                "__elem_1de146dc_0_1_9v",
+                "u_0_a_Mx",
+                1
+            ],
+            [
+                "__elem_ec77afbd_0_1_1h",
+                "u_0_b_c3",
+                2
+            ],
+            [
+                "__elem_9f5fac15_0_0_CE",
+                "pagelet_bluebar",
+                1
+            ],
+            [
+                "__elem_45e94dd8_0_0_dA",
+                "pagelet_bluebar",
+                1
+            ],
+            [
+                "__elem_a588f507_0_0_6y",
+                "globalContainer",
+                2
+            ],
+            [
+                "__elem_a588f507_0_2_Di",
+                "content",
+                1
+            ],
+            [
+                "__elem_835c633a_0_1_FP",
+                "login_form",
+                1
+            ],
+            [
+                "__elem_3f8a34cc_0_0_zw",
+                "email",
+                1
+            ],
+            [
+                "__elem_3f8a34cc_0_1_8t",
+                "pass",
+                1
+            ],
+            [
+                "__elem_45d73b5d_0_0_Nk",
+                "loginbutton",
+                1
+            ],
+            [
+                "__elem_f46f4946_0_2_Os",
+                "u_0_d_bs",
+                1
+            ],
+            [
+                "__elem_f46f4946_0_3_Rw",
+                "u_0_e_mq",
+                1
+            ]
+        ],
+        "require": [
+            [
+                "WebPixelRatioDetector",
+                "startDetecting",
+                [],
+                [
+                    false
+                ]
+            ],
+            [
+                "ScriptPath",
+                "set",
+                [],
+                [
+                    "XAdArchiveAdRendererController",
+                    "a1f3c513",
+                    {
+                        "imp_id": "0u2cR6BULe9pccw0P",
+                        "ef_page": null,
+                        "uri": "https: //web.facebook.com/ads/archive/render_ad/?id=372744321145195&access_token=--sanitized--",
+                        "entity_id": "372744321145195"
+                    }
+                ]
+            ],
+            [
+                "HostnameRewriter",
+                "registerInternetDotOrgFilters",
+                [],
+                [
+                    "facebook.com",
+                    true
+                ]
+            ],
+            [
+                "UITinyViewportAction",
+                "init",
+                [],
+                []
+            ],
+            [
+                "ResetScrollOnUnload",
+                "init",
+                [
+                    "__elem_a588f507_0_0_6y"
+                ],
+                [
+                    {
+                        "__m": "__elem_a588f507_0_0_6y"
+                    }
+                ]
+            ],
+            [
+                "AccessibilityWebVirtualCursorClickLogger",
+                "init",
+                [
+                    "__elem_45e94dd8_0_0_dA",
+                    "__elem_a588f507_0_0_6y"
+                ],
+                [
+                    [
+                        {
+                            "__m": "__elem_45e94dd8_0_0_dA"
+                        },
+                        {
+                            "__m": "__elem_a588f507_0_0_6y"
+                        }
+                    ]
+                ]
+            ],
+            [
+                "KeyboardActivityLogger",
+                "init",
+                [],
+                []
+            ],
+            [
+                "FocusRing",
+                "init",
+                [],
+                []
+            ],
+            [
+                "ErrorMessageConsole",
+                "listenForUncaughtErrors",
+                [],
+                []
+            ],
+            [
+                "HardwareCSS",
+                "init",
+                [],
+                []
+            ],
+            [
+                "NavigationAssistantController",
+                "init",
+                [
+                    "__elem_3fc3da18_0_0_nZ",
+                    "__elem_51be6cb7_0_0_2I",
+                    "__inst_5b4d0c00_0_0_Z+",
+                    "__inst_5b4d0c00_0_1_+f",
+                    "__inst_e5ad243d_0_0_kp",
+                    "__inst_e5ad243d_0_1_17"
+                ],
+                [
+                    {
+                        "__m": "__elem_3fc3da18_0_0_nZ"
+                    },
+                    {
+                        "__m": "__elem_51be6cb7_0_0_2I"
+                    },
+                    {
+                        "__m": "__inst_5b4d0c00_0_0_Z+"
+                    },
+                    {
+                        "__m": "__inst_5b4d0c00_0_1_+f"
+                    },
+                    null,
+                    {
+                        "accessibilityPopoverMenu": {
+                            "__m": "__inst_e5ad243d_0_0_kp"
+                        },
+                        "globalPopoverMenu": null,
+                        "sectionsPopoverMenu": {
+                            "__m": "__inst_e5ad243d_0_1_17"
+                        }
+                    }
+                ]
+            ],
+            [
+                "__inst_e5ad243d_0_1_17"
+            ],
+            [
+                "__inst_1de146dc_0_0_x/"
+            ],
+            [
+                "__inst_e5ad243d_0_0_kp"
+            ],
+            [
+                "__inst_1de146dc_0_1_wn"
+            ],
+            [
+                "AsyncRequestNectarLogging"
+            ],
+            [
+                "TimezoneAutoset",
+                "setInputValue",
+                [
+                    "__elem_f46f4946_0_0_NW"
+                ],
+                [
+                    {
+                        "__m": "__elem_f46f4946_0_0_NW"
+                    },
+                    1630073139
+                ]
+            ],
+            [
+                "ScreenDimensionsAutoSet",
+                "setInputValue",
+                [
+                    "__elem_f46f4946_0_1_rh"
+                ],
+                [
+                    {
+                        "__m": "__elem_f46f4946_0_1_rh"
+                    }
+                ]
+            ],
+            [
+                "LoginFormController",
+                "init",
+                [
+                    "__elem_835c633a_0_0_7R",
+                    "__elem_1edd4980_0_0_l5"
+                ],
+                [
+                    {
+                        "__m": "__elem_835c633a_0_0_7R"
+                    },
+                    {
+                        "__m": "__elem_1edd4980_0_0_l5"
+                    },
+                    null,
+                    true,
+                    {
+                        "pubKey": {
+                            "publicKey": "cceb74d12b48de6f79404b928db6d32fd1092bfdbde10186a5659299e5889735",
+                            "keyId": 122
+                        }
+                    }
+                ]
+            ],
+            [
+                "BrowserPrefillLogging",
+                "initContactpointFieldLogging",
+                [],
+                [
+                    {
+                        "contactpointFieldID": "email",
+                        "serverPrefill": ""
+                    }
+                ]
+            ],
+            [
+                "BrowserPrefillLogging",
+                "initPasswordFieldLogging",
+                [],
+                [
+                    {
+                        "passwordFieldID": "pass"
+                    }
+                ]
+            ],
+            [
+                "FocusListener"
+            ],
+            [
+                "FlipDirectionOnKeypress"
+            ],
+            [
+                "TimezoneAutoset",
+                "setInputValue",
+                [
+                    "__elem_f46f4946_0_2_Os"
+                ],
+                [
+                    {
+                        "__m": "__elem_f46f4946_0_2_Os"
+                    },
+                    1630073139
+                ]
+            ],
+            [
+                "ScreenDimensionsAutoSet",
+                "setInputValue",
+                [
+                    "__elem_f46f4946_0_3_Rw"
+                ],
+                [
+                    {
+                        "__m": "__elem_f46f4946_0_3_Rw"
+                    }
+                ]
+            ],
+            [
+                "LoginFormController",
+                "init",
+                [
+                    "__elem_835c633a_0_1_FP",
+                    "__elem_45d73b5d_0_0_Nk"
+                ],
+                [
+                    {
+                        "__m": "__elem_835c633a_0_1_FP"
+                    },
+                    {
+                        "__m": "__elem_45d73b5d_0_0_Nk"
+                    },
+                    null,
+                    true,
+                    {
+                        "pubKey": {
+                            "publicKey": "cceb74d12b48de6f79404b928db6d32fd1092bfdbde10186a5659299e5889735",
+                            "keyId": 122
+                        }
+                    }
+                ]
+            ],
+            [
+                "BrowserPrefillLogging",
+                "initContactpointFieldLogging",
+                [],
+                [
+                    {
+                        "contactpointFieldID": "email",
+                        "serverPrefill": ""
+                    }
+                ]
+            ],
+            [
+                "BrowserPrefillLogging",
+                "initPasswordFieldLogging",
+                [],
+                [
+                    {
+                        "passwordFieldID": "pass"
+                    }
+                ]
+            ],
+            [
+                "StickyPlaceholderInput",
+                "registerInput",
+                [
+                    "__elem_3f8a34cc_0_0_zw"
+                ],
+                [
+                    {
+                        "__m": "__elem_3f8a34cc_0_0_zw"
+                    }
+                ]
+            ],
+            [
+                "StickyPlaceholderInput",
+                "registerInput",
+                [
+                    "__elem_3f8a34cc_0_1_8t"
+                ],
+                [
+                    {
+                        "__m": "__elem_3f8a34cc_0_1_8t"
+                    }
+                ]
+            ],
+            [
+                "IntlUtils"
+            ],
+            [
+                "FBLynx",
+                "setupDelegation",
+                [],
+                []
+            ],
+            [
+                "Animation"
+            ],
+            [
+                "PageTransitions"
+            ],
+            [
+                "RequireDeferredReference",
+                "unblock",
+                [],
+                [
+                    [
+                        "BanzaiScuba_DEPRECATED",
+                        "Animation",
+                        "FbtLogging",
+                        "IntlQtEventFalcoEvent",
+                        "PageTransitions"
+                    ],
+                    "sd"
+                ]
+            ],
+            [
+                "RequireDeferredReference",
+                "unblock",
+                [],
+                [
+                    [
+                        "BanzaiScuba_DEPRECATED",
+                        "Animation",
+                        "FbtLogging",
+                        "IntlQtEventFalcoEvent",
+                        "PageTransitions"
+                    ],
+                    "css"
+                ]
+            ],
+            [
+                "TimeSliceImpl"
+            ],
+            [
+                "HasteSupportData"
+            ],
+            [
+                "ServerJS"
+            ],
+            [
+                "Run"
+            ],
+            [
+                "InitialJSLoader"
+            ]
+        ],
+        "contexts": [
+            [
+                {
+                    "__m": "__elem_a588f507_0_1_cx"
+                },
+                true
+            ],
+            [
+                {
+                    "__m": "__elem_9f5fac15_0_0_CE"
+                },
+                false
+            ],
+            [
+                {
+                    "__m": "__elem_a588f507_0_2_Di"
+                },
+                true
+            ]
+        ]
+    }
 }

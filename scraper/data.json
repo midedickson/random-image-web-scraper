@@ -1,0 +1,3697 @@
+{
+    "define": [
+        [
+            "TimeSliceInteractionSV",
+            [],
+            {
+                "on_demand_reference_counting": true,
+                "on_demand_profiling_counters": true,
+                "default_rate": 1000,
+                "lite_default_rate": 100,
+                "interaction_to_lite_coinflip": {
+                    "ADS_INTERFACES_INTERACTION": 0,
+                    "ads_perf_scenario": 0,
+                    "ads_wait_time": 0,
+                    "Event": 1
+                },
+                "interaction_to_coinflip": {
+                    "ADS_INTERFACES_INTERACTION": 1,
+                    "ads_perf_scenario": 1,
+                    "ads_wait_time": 1,
+                    "Event": 100
+                },
+                "enable_heartbeat": true,
+                "maxBlockMergeDuration": 0,
+                "maxBlockMergeDistance": 0,
+                "enable_banzai_stream": true,
+                "user_timing_coinflip": 50,
+                "banzai_stream_coinflip": 0,
+                "compression_enabled": true,
+                "ref_counting_fix": false,
+                "ref_counting_cont_fix": false,
+                "also_record_new_timeslice_format": false,
+                "force_async_request_tracing_on": false
+            },
+            2609
+        ],
+        [
+            "DateFormatConfig",
+            [],
+            {
+                "numericDateOrder": [
+                    "d",
+                    "m",
+                    "y"
+                ],
+                "numericDateSeparator": "\/",
+                "shortDayNames": [
+                    "Mon",
+                    "Tues",
+                    "Wed",
+                    "Thurs",
+                    "Fri",
+                    "Sat",
+                    "Sun"
+                ],
+                "timeSeparator": ":",
+                "weekStart": 6,
+                "formats": {
+                    "D": "D",
+                    "D g:ia": "D H:i",
+                    "D M d": "j F",
+                    "D M d, Y": "l, j F Y",
+                    "D M j": "D, j M",
+                    "D M j, g:ia": "j F H:i",
+                    "D M j, y": "l, j F Y",
+                    "D M j, Y g:ia": "l, j F Y H:i",
+                    "D, M j, Y": "l, j F Y",
+                    "F d": "j F",
+                    "F d, Y": "j F Y",
+                    "F g": "j F",
+                    "F j": "j F",
+                    "F j, Y": "j F Y",
+                    "F j, Y \u0040 g:i A": "j F Y H:i",
+                    "F j, Y g:i a": "j F Y H:i",
+                    "F jS": "j F",
+                    "F jS, g:ia": "j F H:i",
+                    "F jS, Y": "j F Y",
+                    "F Y": "F Y",
+                    "g A": "H",
+                    "g:i": "H:i",
+                    "g:i A": "H:i",
+                    "g:i a": "H:i",
+                    "g:iA": "H:i",
+                    "g:ia": "H:i",
+                    "g:ia F jS, Y": "j F Y H:i",
+                    "g:iA l, F jS": "l, j F Y H:i",
+                    "g:ia M j": "j F H:i",
+                    "g:ia M jS": "j F H:i",
+                    "g:ia, F jS": "j F H:i",
+                    "g:iA, l M jS": "l, j F Y H:i",
+                    "g:sa": "H:i",
+                    "H:I - M d, Y": "j F Y H:i",
+                    "h:i a": "H:i",
+                    "h:m:s m\/d\/Y": "d\/m\/Y H:i:s",
+                    "j": "j",
+                    "l F d, Y": "l, j F Y",
+                    "l g:ia": "l H:i",
+                    "l, F d, Y": "l, j F Y",
+                    "l, F j": "j F",
+                    "l, F j, Y": "l, j F Y",
+                    "l, F jS": "j F",
+                    "l, F jS, g:ia": "l, j F Y H:i",
+                    "l, M j": "j F",
+                    "l, M j, Y": "l, j F Y",
+                    "l, M j, Y g:ia": "l, j F Y H:i",
+                    "M d": "j F",
+                    "M d, Y": "j F Y",
+                    "M d, Y g:ia": "j F Y H:i",
+                    "M d, Y ga": "j F Y H",
+                    "M j": "j F",
+                    "M j, Y": "j F Y",
+                    "M j, Y g:i A": "j F Y H:i",
+                    "M j, Y g:ia": "j F Y H:i",
+                    "M jS, g:ia": "j F H:i",
+                    "M Y": "F Y",
+                    "M y": "j F",
+                    "m-d-y": "d\/m\/Y",
+                    "M. d": "j F",
+                    "M. d, Y": "j F Y",
+                    "j F Y": "j F Y",
+                    "m.d.y": "d\/m\/Y",
+                    "m\/d": "d\/m",
+                    "m\/d\/Y": "d\/m\/Y",
+                    "m\/d\/y": "d\/m\/Y",
+                    "m\/d\/Y g:ia": "d\/m\/Y H:i",
+                    "m\/d\/y H:i:s": "d\/m\/Y H:i:s",
+                    "m\/d\/Y h:m": "d\/m\/Y H:i:s",
+                    "n": "d\/m",
+                    "n\/j": "d\/m",
+                    "n\/j, g:ia": "d\/m\/Y H:i",
+                    "n\/j\/y": "d\/m\/Y",
+                    "Y": "Y",
+                    "Y-m-d": "d\/m\/Y",
+                    "Y\/m\/d": "d\/m\/Y",
+                    "y\/m\/d": "d\/m\/Y",
+                    "j \/ F \/ Y": "j \/ F \/ Y"
+                },
+                "ordinalSuffixes": {
+                    "1": "st",
+                    "2": "nd",
+                    "3": "rd",
+                    "4": "th",
+                    "5": "th",
+                    "6": "th",
+                    "7": "th",
+                    "8": "th",
+                    "9": "th",
+                    "10": "th",
+                    "11": "th",
+                    "12": "th",
+                    "13": "th",
+                    "14": "th",
+                    "15": "th",
+                    "16": "th",
+                    "17": "th",
+                    "18": "th",
+                    "19": "th",
+                    "20": "th",
+                    "21": "st",
+                    "22": "nd",
+                    "23": "rd",
+                    "24": "th",
+                    "25": "th",
+                    "26": "th",
+                    "27": "th",
+                    "28": "th",
+                    "29": "th",
+                    "30": "th",
+                    "31": "st"
+                }
+            },
+            165
+        ],
+        [
+            "EmojiConfig",
+            [],
+            {
+                "pixelRatio": "1",
+                "schemaAuth": "https:\/\/static.xx.fbcdn.net\/images\/emoji.php\/v9",
+                "hasEmojiPickerSearch": false
+            },
+            1421
+        ],
+        [
+            "LinkshimHandlerConfig",
+            [],
+            {
+                "supports_meta_referrer": false,
+                "default_meta_referrer_policy": "default",
+                "switched_meta_referrer_policy": "origin",
+                "non_linkshim_lnfb_mode": "ie",
+                "link_react_default_hash": "AT2IMz8Ao3CV6n8c6_c5nxgbwafYdpZCqsl21FmRgDcVjsV10_0Hd7ZmE6-VEaTvm3m4N3sg1-tttHx_69sJsUOIh8t-9vg-xWI2ym1mwcPIWM4xoxSIXFgiXaYZ346t9Vcyvj6dWhZVIQg_",
+                "untrusted_link_default_hash": "AT1vQQFUda_3y4wOQ-U3GV0fM6mMTEV4b0gBEKTX_F9c166R6TSFik8byXhyyVZZNa4jbHZZ8HNQJtSLq13kUNXgF1wXNGC3-dU0nf9y1k2WtAvD8G4U-NXux148qN_HOUkQKGhrJvqZQDwO",
+                "linkshim_host": "l.facebook.com",
+                "linkshim_path": "\/l.php",
+                "linkshim_enc_param": "h",
+                "linkshim_url_param": "u",
+                "use_rel_no_opener": false,
+                "always_use_https": true,
+                "onion_always_shim": true,
+                "middle_click_requires_event": false,
+                "www_safe_js_mode": "hover",
+                "m_safe_js_mode": null,
+                "ghl_param_link_shim": false,
+                "click_ids": [],
+                "is_linkshim_supported": true,
+                "current_domain": "facebook.com",
+                "blocklisted_domains": [
+                    "ad.doubleclick.net",
+                    "ads-encryption-url-example.com",
+                    "bs.serving-sys.com",
+                    "ad.atdmt.com",
+                    "adform.net",
+                    "ad13.adfarm1.adition.com",
+                    "ilovemyfreedoms.com",
+                    "secure.adnxs.com"
+                ],
+                "is_mobile_device": false
+            },
+            27
+        ],
+        [
+            "RelayAPIConfigDefaults",
+            [],
+            {
+                "accessToken": "",
+                "actorID": "0",
+                "customHeaders": {},
+                "enableNetworkLogger": false,
+                "fetchTimeout": 30000,
+                "graphBatchURI": "\/api\/graphqlbatch\/",
+                "graphURI": "\/api\/graphql\/",
+                "retryDelays": [
+                    1000,
+                    3000
+                ],
+                "useXController": true,
+                "xhrEncoding": null,
+                "subscriptionTopicURI": "\/dlite\/skywalker_topic\/",
+                "withCredentials": false,
+                "isProductionEndpoint": false
+            },
+            926
+        ],
+        [
+            "LoadingMarkerGated",
+            [],
+            {
+                "component": null
+            },
+            2874
+        ],
+        [
+            "CLDRDateRenderingClientRollout",
+            [],
+            {
+                "formatDateClientLoggerSamplingRate": 0.0001
+            },
+            3003
+        ],
+        [
+            "CLDRDateFormatConfig",
+            [],
+            {
+                "supportedPHPFormatsKeys": {
+                    "D": "E",
+                    "D g:ia": "Ejm",
+                    "D M d": "MMMEd",
+                    "D M d, Y": "yMMMEd",
+                    "D M j": "MMMEd",
+                    "D M j, y": "yMMMEd",
+                    "D, M j": "MMMEd",
+                    "D, M j, Y": "yMMMEd",
+                    "F d": "MMMMd",
+                    "F d, Y": "date_long",
+                    "F j": "MMMMd",
+                    "F j, Y": "date_long",
+                    "F j, Y \u0040 g:i A": "dateTime_long_short",
+                    "F j, Y g:i a": "dateTime_long_short",
+                    "F j, Y \u0040 g:i:s A": "dateTime_long_medium",
+                    "F jS": "MMMMd",
+                    "F jS, g:ia": "dateTime_long_short",
+                    "F jS, Y": "date_long",
+                    "F Y": "yMMMM",
+                    "g A": "j",
+                    "G:i": "time_short",
+                    "g:i": "time_short",
+                    "g:i a": "time_short",
+                    "g:i A": "time_short",
+                    "g:i:s A": "time_medium",
+                    "g:ia": "time_short",
+                    "g:iA": "time_short",
+                    "g:ia F jS, Y": "dateTime_long_short",
+                    "g:iA l, F jS": "dateTime_full_short",
+                    "g:ia M jS": "dateTime_medium_short",
+                    "g:ia, F jS": "dateTime_long_short",
+                    "g:iA, l M jS": "dateTime_full_short",
+                    "h:i a": "time_short",
+                    "h:m:s m\/d\/Y": "dateTime_short_short",
+                    "j": "d",
+                    "j F Y": "date_long",
+                    "l F d, Y": "date_full",
+                    "l, F d, Y": "date_full",
+                    "l, F j": "date_full",
+                    "l, F j, Y": "date_full",
+                    "l, F jS": "date_full",
+                    "l, F jS, g:ia": "dateTime_full_short",
+                    "l, M j": "date_full",
+                    "l, M j, Y": "date_full",
+                    "l, M j, Y g:ia": "dateTime_full_short",
+                    "M d": "MMMd",
+                    "M d, Y": "date_medium",
+                    "M d, Y g:ia": "dateTime_medium_short",
+                    "M d, Y ga": "dateTime_medium_short",
+                    "M j": "MMMd",
+                    "M j, Y": "date_medium",
+                    "M j, Y g:i A": "dateTime_medium_short",
+                    "M j, Y g:ia": "dateTime_medium_short",
+                    "M jS, g:ia": "dateTime_medium_short",
+                    "M y": "yMMM",
+                    "M Y": "yMMM",
+                    "M. d": "MMMd",
+                    "M. d, Y": "date_medium",
+                    "m\/d": "Md",
+                    "m\/d\/Y g:ia": "dateTime_short_short",
+                    "m\/d\/y H:i:s": "dateTime_short_short",
+                    "n": "M",
+                    "n\/j": "Md",
+                    "n\/j, g:ia": "dateTime_short_short",
+                    "n\/j\/y": "date_short",
+                    "Y": "y"
+                },
+                "isLocaleInConfigerator": true,
+                "CLDRConfigeratorFormats": {
+                    "dateFormats": {
+                        "full": "EEEE, d MMMM y",
+                        "long": "d MMMM y",
+                        "medium": "d MMM y",
+                        "short": "dd\/MM\/y"
+                    },
+                    "timeFormats": {
+                        "full": "HH:mm:ss zzzz",
+                        "long": "HH:mm:ss z",
+                        "medium": "HH:mm:ss",
+                        "short": "HH:mm"
+                    },
+                    "dateTimeFormats": {
+                        "full": "{1} 'at' {0}",
+                        "long": "{1} 'at' {0}",
+                        "medium": "{1}, {0}",
+                        "short": "{1}, {0}"
+                    },
+                    "availableFormats": {
+                        "Bh": "h B",
+                        "Bhm": "h:mm B",
+                        "Bhms": "h:mm:ss B",
+                        "E": "ccc",
+                        "EBhm": "E, h:mm B",
+                        "EBhms": "E, h:mm:ss B",
+                        "EHm": "E HH:mm",
+                        "EHms": "E HH:mm:ss",
+                        "Ed": "E d",
+                        "Ehm": "E h:mm a",
+                        "Ehms": "E h:mm:ss a",
+                        "Gy": "y G",
+                        "GyMMM": "MMM y G",
+                        "GyMMMEd": "E, d MMM y G",
+                        "GyMMMd": "d MMM y G",
+                        "H": "HH",
+                        "Hm": "HH:mm",
+                        "Hms": "HH:mm:ss",
+                        "Hmsv": "HH:mm:ss v",
+                        "Hmv": "HH:mm v",
+                        "M": "L",
+                        "MEd": "E, dd\/MM",
+                        "MMM": "LLL",
+                        "MMMEd": "E, d MMM",
+                        "MMMMW-count-one": "'week' W 'of' MMMM",
+                        "MMMMW-count-other": "'week' W 'of' MMMM",
+                        "MMMMd": "d MMMM",
+                        "MMMd": "d MMM",
+                        "MMdd": "dd\/MM",
+                        "Md": "dd\/MM",
+                        "d": "d",
+                        "h": "h a",
+                        "hm": "h:mm a",
+                        "hms": "h:mm:ss a",
+                        "hmsv": "h:mm:ss a v",
+                        "hmv": "h:mm a v",
+                        "ms": "mm:ss",
+                        "y": "y",
+                        "yM": "MM\/y",
+                        "yMEd": "E, dd\/MM\/y",
+                        "yMMM": "MMM y",
+                        "yMMMEd": "E, d MMM y",
+                        "yMMMM": "MMMM y",
+                        "yMMMd": "d MMM y",
+                        "yMd": "dd\/MM\/y",
+                        "yQQQ": "QQQ y",
+                        "yQQQQ": "QQQQ y",
+                        "yw-count-one": "'week' w 'of' Y",
+                        "yw-count-other": "'week' w 'of' Y"
+                    }
+                },
+                "CLDRRegionalConfigeratorFormats": {
+                    "dateFormats": {
+                        "full": "EEEE, d MMMM y",
+                        "long": "d MMMM y",
+                        "medium": "d MMM y",
+                        "short": "dd\/MM\/y"
+                    },
+                    "timeFormats": {
+                        "full": "HH:mm:ss zzzz",
+                        "long": "HH:mm:ss z",
+                        "medium": "HH:mm:ss",
+                        "short": "HH:mm"
+                    },
+                    "dateTimeFormats": {
+                        "full": "{1} 'at' {0}",
+                        "long": "{1} 'at' {0}",
+                        "medium": "{1}, {0}",
+                        "short": "{1}, {0}"
+                    },
+                    "availableFormats": {
+                        "Bh": "h B",
+                        "Bhm": "h:mm B",
+                        "Bhms": "h:mm:ss B",
+                        "E": "ccc",
+                        "EBhm": "E, h:mm B",
+                        "EBhms": "E, h:mm:ss B",
+                        "EHm": "E HH:mm",
+                        "EHms": "E HH:mm:ss",
+                        "Ed": "E d",
+                        "Ehm": "E h:mm a",
+                        "Ehms": "E h:mm:ss a",
+                        "Gy": "y G",
+                        "GyMMM": "MMM y G",
+                        "GyMMMEd": "E, d MMM y G",
+                        "GyMMMd": "d MMM y G",
+                        "H": "HH",
+                        "Hm": "HH:mm",
+                        "Hms": "HH:mm:ss",
+                        "Hmsv": "HH:mm:ss v",
+                        "Hmv": "HH:mm v",
+                        "M": "L",
+                        "MEd": "E, dd\/MM",
+                        "MMM": "LLL",
+                        "MMMEd": "E, d MMM",
+                        "MMMMW-count-one": "'week' W 'of' MMMM",
+                        "MMMMW-count-other": "'week' W 'of' MMMM",
+                        "MMMMd": "d MMMM",
+                        "MMMd": "d MMM",
+                        "MMdd": "dd\/MM",
+                        "Md": "dd\/MM",
+                        "d": "d",
+                        "h": "h a",
+                        "hm": "h:mm a",
+                        "hms": "h:mm:ss a",
+                        "hmsv": "h:mm:ss a v",
+                        "hmv": "h:mm a v",
+                        "ms": "mm:ss",
+                        "y": "y",
+                        "yM": "MM\/y",
+                        "yMEd": "E, dd\/MM\/y",
+                        "yMMM": "MMM y",
+                        "yMMMEd": "E, d MMM y",
+                        "yMMMM": "MMMM y",
+                        "yMMMd": "d MMM y",
+                        "yMd": "dd\/MM\/y",
+                        "yQQQ": "QQQ y",
+                        "yQQQQ": "QQQQ y",
+                        "yw-count-one": "'week' w 'of' Y",
+                        "yw-count-other": "'week' w 'of' Y"
+                    }
+                },
+                "CLDRToPHPSymbolConversion": {
+                    "yyyy": "Y",
+                    "yy": "y",
+                    "y": "Y",
+                    "MMMMM": "M",
+                    "MMMM": "F",
+                    "MMM": "M",
+                    "MM": "m",
+                    "M": "n",
+                    "dd": "d",
+                    "d": "j",
+                    "EEEEE": "D",
+                    "EEEE": "l",
+                    "EEE": "D",
+                    "EE": "D",
+                    "E": "D",
+                    "aaaaa": "A",
+                    "aaaa": "A",
+                    "aaa": "A",
+                    "aa": "A",
+                    "a": "A",
+                    "bbbbb": "A",
+                    "bbbb": "A",
+                    "bbb": "A",
+                    "bb": "A",
+                    "b": "A",
+                    "BBBBB": "A",
+                    "BBBB": "A",
+                    "BBB": "A",
+                    "BB": "A",
+                    "B": "A",
+                    "HH": "H",
+                    "H": "G",
+                    "hh": "h",
+                    "h": "g",
+                    "K": "g",
+                    "mm": "i",
+                    "ss": "s",
+                    "z": "",
+                    "zz": "",
+                    "zzz": "",
+                    "ccccc": "D",
+                    "cccc": "l",
+                    "ccc": "D",
+                    "cc": "D",
+                    "c": "D",
+                    "LLLLL": "M",
+                    "LLLL": "f",
+                    "LLL": "M",
+                    "LL": "m",
+                    "L": "n",
+                    "G": ""
+                },
+                "intlDateSpecialChars": {
+                    "cldrDelimiter": "'",
+                    "singleQuote": "'",
+                    "singleQuoteHolder": "*"
+                }
+            },
+            3019
+        ],
+        [
+            "FBDomainsSVConfig",
+            [],
+            {
+                "domains": {
+                    "__map": [
+                        [
+                            "www.facebook.com",
+                            1
+                        ],
+                        [
+                            "tfbnw.net",
+                            1
+                        ],
+                        [
+                            "m.beta.facebook.com",
+                            1
+                        ],
+                        [
+                            "touch.beta.facebook.com",
+                            1
+                        ],
+                        [
+                            "www.dev.facebook.com",
+                            1
+                        ],
+                        [
+                            "fb.me",
+                            1
+                        ],
+                        [
+                            "s.fb.com",
+                            1
+                        ],
+                        [
+                            "m.fbjs.facebook.com",
+                            1
+                        ],
+                        [
+                            "facebook.com.es",
+                            1
+                        ],
+                        [
+                            "www.fbjs.facebook.com",
+                            1
+                        ],
+                        [
+                            "m.facebook.com",
+                            1
+                        ],
+                        [
+                            "facebook.fr",
+                            1
+                        ],
+                        [
+                            "fbsbx.com",
+                            1
+                        ],
+                        [
+                            "embed.fbsbx.com",
+                            1
+                        ],
+                        [
+                            "attachment.fbsbx.com",
+                            1
+                        ],
+                        [
+                            "lookaside.fbsbx.com",
+                            1
+                        ],
+                        [
+                            "web.facebook.com",
+                            1
+                        ],
+                        [
+                            "fb.com",
+                            1
+                        ],
+                        [
+                            "messenger.com",
+                            1
+                        ],
+                        [
+                            "secure.facebook.com",
+                            1
+                        ],
+                        [
+                            "secure.my-od.facebook.com",
+                            1
+                        ],
+                        [
+                            "www.my-od.facebook.com",
+                            1
+                        ]
+                    ]
+                }
+            },
+            3828
+        ],
+        [
+            "ClickIDDomainBlacklistSVConfig",
+            [],
+            {
+                "domains": [
+                    "craigslist",
+                    "tfbnw.net",
+                    "flashtalking.com",
+                    "canadiantire.ca",
+                    "o2.co.uk",
+                    "archive.org",
+                    "reddit.com",
+                    "redd.it",
+                    "gmail.com",
+                    "cvk.gov.ua",
+                    "electoralsearch.in",
+                    "yahoo.com",
+                    "cve.mitre.org",
+                    "usenix.org",
+                    "ky.gov",
+                    "voteohio.gov",
+                    "oversightboard.com",
+                    "wi.gov",
+                    "pbs.twimg.com",
+                    "media.discordapp.net",
+                    "vastadeal.com",
+                    "theaustralian.com.au",
+                    "alloygator.com",
+                    "elsmannimmobilien.de",
+                    "news.com.au",
+                    "dennisbonnen.com",
+                    "stoett.com",
+                    "investorhour.com",
+                    "perspectivasur.com",
+                    "bonnegueule.fr",
+                    "firstent.org",
+                    "twitpic.com",
+                    "kollosche.com.au",
+                    "nau.edu",
+                    "arcourts.gov",
+                    "lomberg.de",
+                    "network4.hu",
+                    "balloonrace.com",
+                    "awstrack.me",
+                    "ic3.gov",
+                    "sos.wyo.gov",
+                    "cnpq.br",
+                    "0.discoverapp.com"
+                ]
+            },
+            3829
+        ],
+        [
+            "AdLibraryV2LaunchDateConfig",
+            [],
+            {
+                "launchDates": {
+                    "US": 1525676400,
+                    "BR": 1534402800,
+                    "GB": 1539586800,
+                    "IN": 1549526400,
+                    "IL": 1552633200,
+                    "UA": 1552633200,
+                    "CA": 1560150000,
+                    "AT": 1553756400,
+                    "BE": 1553756400,
+                    "BG": 1553756400,
+                    "HR": 1553756400,
+                    "CY": 1553756400,
+                    "CZ": 1553756400,
+                    "DK": 1553756400,
+                    "EE": 1553756400,
+                    "FI": 1553756400,
+                    "FR": 1553756400,
+                    "DE": 1553756400,
+                    "GR": 1553756400,
+                    "HU": 1553756400,
+                    "IE": 1553756400,
+                    "IT": 1553756400,
+                    "LV": 1553756400,
+                    "LT": 1553756400,
+                    "LU": 1553756400,
+                    "MT": 1553756400,
+                    "NL": 1553756400,
+                    "PL": 1553756400,
+                    "PT": 1553756400,
+                    "RO": 1553756400,
+                    "SK": 1553756400,
+                    "SI": 1553756400,
+                    "ES": 1553756400,
+                    "SE": 1553756400,
+                    "AS": 1525676400,
+                    "GU": 1525676400,
+                    "MP": 1525676400,
+                    "PR": 1525676400,
+                    "UM": 1525676400,
+                    "VI": 1525676400,
+                    "GP": 1553756400,
+                    "MQ": 1553756400,
+                    "MF": 1553756400,
+                    "BL": 1553756400,
+                    "PM": 1553756400,
+                    "RE": 1553756400,
+                    "YT": 1553756400,
+                    "GF": 1553756400
+                }
+            },
+            4293
+        ],
+        [
+            "AdReportCountryConfig",
+            [],
+            {
+                "countries": [
+                    "US",
+                    "IL",
+                    "IN",
+                    "UA",
+                    "CA",
+                    "AR",
+                    "SG",
+                    "TW",
+                    "GB",
+                    "AT",
+                    "BE",
+                    "BG",
+                    "HR",
+                    "CY",
+                    "CZ",
+                    "DK",
+                    "EE",
+                    "FI",
+                    "FR",
+                    "DE",
+                    "GR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LK",
+                    "LV",
+                    "LT",
+                    "LU",
+                    "MT",
+                    "NL",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SK",
+                    "SI",
+                    "ES",
+                    "SE",
+                    "NZ",
+                    "AU",
+                    "BF",
+                    "BO",
+                    "BR",
+                    "BZ",
+                    "CI",
+                    "CL",
+                    "CO",
+                    "DO",
+                    "EC",
+                    "GE",
+                    "GH",
+                    "GY",
+                    "ID",
+                    "IS",
+                    "JP",
+                    "KG",
+                    "MD",
+                    "ME",
+                    "MK",
+                    "ML",
+                    "MM",
+                    "MN",
+                    "MX",
+                    "MY",
+                    "PH",
+                    "PW",
+                    "RS",
+                    "SC",
+                    "SR",
+                    "TR",
+                    "TZ",
+                    "VC",
+                    "AL",
+                    "BJ",
+                    "KY",
+                    "ET",
+                    "FK",
+                    "HN",
+                    "KE",
+                    "MG",
+                    "MU",
+                    "MA",
+                    "PY",
+                    "PE",
+                    "LC",
+                    "WS",
+                    "ST",
+                    "SN",
+                    "GS",
+                    "TO",
+                    "TT",
+                    "UY",
+                    "NO",
+                    "ZA",
+                    "ZM"
+                ],
+                "planned": [
+                    "IQ"
+                ],
+                "locationBlacklist": [
+                    "UA",
+                    "SG",
+                    "PW",
+                    "RS",
+                    "WS",
+                    "GS",
+                    "FK"
+                ]
+            },
+            4358
+        ],
+        [
+            "IsInternSite",
+            [],
+            {
+                "is_intern_site": false
+            },
+            4517
+        ],
+        [
+            "AdLibraryCountryConfig",
+            [],
+            {
+                "all": [],
+                "credit_ads": [
+                    "CA",
+                    "GU",
+                    "PR",
+                    "US",
+                    "VI"
+                ],
+                "employment_ads": [
+                    "CA",
+                    "GU",
+                    "PR",
+                    "US",
+                    "VI"
+                ],
+                "housing_ads": [
+                    "CA",
+                    "GU",
+                    "PR",
+                    "US",
+                    "VI"
+                ],
+                "political_and_issue_ads": [
+                    "AL",
+                    "AR",
+                    "AS",
+                    "AT",
+                    "AU",
+                    "AW",
+                    "AX",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BJ",
+                    "BL",
+                    "BO",
+                    "BQ",
+                    "BR",
+                    "BZ",
+                    "CA",
+                    "CI",
+                    "CK",
+                    "CL",
+                    "CO",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "EC",
+                    "EE",
+                    "ES",
+                    "ET",
+                    "FI",
+                    "FK",
+                    "FO",
+                    "FR",
+                    "GB",
+                    "GE",
+                    "GF",
+                    "GH",
+                    "GL",
+                    "GP",
+                    "GR",
+                    "GS",
+                    "GU",
+                    "GY",
+                    "HN",
+                    "HR",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KY",
+                    "LC",
+                    "LK",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MA",
+                    "MD",
+                    "ME",
+                    "MF",
+                    "MG",
+                    "MK",
+                    "ML",
+                    "MM",
+                    "MN",
+                    "MP",
+                    "MQ",
+                    "MT",
+                    "MU",
+                    "MX",
+                    "MY",
+                    "NL",
+                    "NO",
+                    "NU",
+                    "NZ",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PM",
+                    "PR",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "RE",
+                    "RO",
+                    "RS",
+                    "SC",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SJ",
+                    "SK",
+                    "SN",
+                    "SR",
+                    "ST",
+                    "SX",
+                    "TK",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UM",
+                    "US",
+                    "UY",
+                    "VC",
+                    "VI",
+                    "WS",
+                    "XK",
+                    "YT",
+                    "ZA",
+                    "ZM"
+                ],
+                "uncategorized_ads": []
+            },
+            4949
+        ],
+        [
+            "AdLibraryPlannedCountryConfig",
+            [],
+            {
+                "all": [],
+                "credit_ads": [
+                    "AD",
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GF",
+                    "GG",
+                    "GP",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IM",
+                    "IS",
+                    "IT",
+                    "JE",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MF",
+                    "MQ",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RE",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK",
+                    "SM",
+                    "VA",
+                    "YT"
+                ],
+                "employment_ads": [
+                    "AD",
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GF",
+                    "GG",
+                    "GP",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IM",
+                    "IS",
+                    "IT",
+                    "JE",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MF",
+                    "MQ",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RE",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK",
+                    "SM",
+                    "VA",
+                    "YT"
+                ],
+                "housing_ads": [
+                    "AD",
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GF",
+                    "GG",
+                    "GP",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IM",
+                    "IS",
+                    "IT",
+                    "JE",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MC",
+                    "MF",
+                    "MQ",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RE",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK",
+                    "SM",
+                    "VA",
+                    "YT"
+                ],
+                "political_and_issue_ads": [],
+                "uncategorized_ads": []
+            },
+            4957
+        ],
+        [
+            "WebDriverConfig",
+            [],
+            {
+                "isTestRunning": false,
+                "isJestE2ETestRun": false,
+                "auxiliaryServiceInfo": {},
+                "testPath": null,
+                "originHost": null
+            },
+            5332
+        ],
+        [
+            "AdsCountriesConfig",
+            [],
+            {
+                "countries": {
+                    "US": "United States",
+                    "CA": "Canada",
+                    "GB": "United Kingdom",
+                    "AR": "Argentina",
+                    "AU": "Australia",
+                    "AT": "Austria",
+                    "BE": "Belgium",
+                    "BR": "Brazil",
+                    "CL": "Chile",
+                    "CN": "China",
+                    "CO": "Colombia",
+                    "HR": "Croatia",
+                    "DK": "Denmark",
+                    "DO": "Dominican Republic",
+                    "EG": "Egypt",
+                    "FI": "Finland",
+                    "FR": "France",
+                    "DE": "Germany",
+                    "GR": "Greece",
+                    "HK": "Hong Kong",
+                    "IN": "India",
+                    "ID": "Indonesia",
+                    "IE": "Ireland",
+                    "IL": "Israel",
+                    "IT": "Italy",
+                    "JP": "Japan",
+                    "JO": "Jordan",
+                    "KW": "Kuwait",
+                    "LB": "Lebanon",
+                    "MY": "Malaysia",
+                    "MX": "Mexico",
+                    "NL": "Netherlands",
+                    "NZ": "New Zealand",
+                    "NG": "Nigeria",
+                    "NO": "Norway",
+                    "PK": "Pakistan",
+                    "PA": "Panama",
+                    "PE": "Peru",
+                    "PH": "Philippines",
+                    "PL": "Poland",
+                    "RU": "Russia",
+                    "SA": "Saudi Arabia",
+                    "RS": "Serbia",
+                    "SG": "Singapore",
+                    "ZA": "South Africa",
+                    "KR": "South Korea",
+                    "ES": "Spain",
+                    "SE": "Sweden",
+                    "CH": "Switzerland",
+                    "TW": "Taiwan",
+                    "TH": "Thailand",
+                    "TR": "Turkey",
+                    "AE": "United Arab Emirates",
+                    "VE": "Venezuela",
+                    "PT": "Portugal",
+                    "LU": "Luxembourg",
+                    "BG": "Bulgaria",
+                    "CZ": "Czech Republic",
+                    "SI": "Slovenia",
+                    "IS": "Iceland",
+                    "SK": "Slovakia",
+                    "LT": "Lithuania",
+                    "TT": "Trinidad and Tobago",
+                    "BD": "Bangladesh",
+                    "LK": "Sri Lanka",
+                    "KE": "Kenya",
+                    "HU": "Hungary",
+                    "MA": "Morocco",
+                    "CY": "Cyprus",
+                    "JM": "Jamaica",
+                    "EC": "Ecuador",
+                    "RO": "Romania",
+                    "BO": "Bolivia",
+                    "GT": "Guatemala",
+                    "CR": "Costa Rica",
+                    "QA": "Qatar",
+                    "SV": "El Salvador",
+                    "HN": "Honduras",
+                    "NI": "Nicaragua",
+                    "PY": "Paraguay",
+                    "UY": "Uruguay",
+                    "PR": "Puerto Rico",
+                    "BA": "Bosnia and Herzegovina",
+                    "PS": "Palestine",
+                    "TN": "Tunisia",
+                    "BH": "Bahrain",
+                    "VN": "Vietnam",
+                    "GH": "Ghana",
+                    "MU": "Mauritius",
+                    "UA": "Ukraine",
+                    "MT": "Malta",
+                    "BS": "The Bahamas",
+                    "MV": "Maldives",
+                    "OM": "Oman",
+                    "MK": "Macedonia",
+                    "LV": "Latvia",
+                    "EE": "Estonia",
+                    "IQ": "Iraq",
+                    "DZ": "Algeria",
+                    "AL": "Albania",
+                    "NP": "Nepal",
+                    "MO": "Macau",
+                    "ME": "Montenegro",
+                    "SN": "Senegal",
+                    "GE": "Georgia",
+                    "BN": "Brunei",
+                    "UG": "Uganda",
+                    "GP": "Guadeloupe",
+                    "BB": "Barbados",
+                    "AZ": "Azerbaijan",
+                    "TZ": "Tanzania",
+                    "LY": "Libya",
+                    "MQ": "Martinique",
+                    "CM": "Cameroon",
+                    "BW": "Botswana",
+                    "ET": "Ethiopia",
+                    "KZ": "Kazakhstan",
+                    "NA": "Namibia",
+                    "MG": "Madagascar",
+                    "NC": "New Caledonia",
+                    "MD": "Moldova",
+                    "FJ": "Fiji",
+                    "BY": "Belarus",
+                    "JE": "Jersey",
+                    "GU": "Guam",
+                    "YE": "Yemen",
+                    "ZM": "Zambia",
+                    "IM": "Isle of Man",
+                    "HT": "Haiti",
+                    "KH": "Cambodia",
+                    "AW": "Aruba",
+                    "PF": "French Polynesia",
+                    "AF": "Afghanistan",
+                    "BM": "Bermuda",
+                    "GY": "Guyana",
+                    "AM": "Armenia",
+                    "MW": "Malawi",
+                    "AG": "Antigua",
+                    "RW": "Rwanda",
+                    "GG": "Guernsey",
+                    "GM": "The Gambia",
+                    "FO": "Faroe Islands",
+                    "LC": "St. Lucia",
+                    "KY": "Cayman Islands",
+                    "BJ": "Benin",
+                    "AD": "Andorra",
+                    "GD": "Grenada",
+                    "VI": "US Virgin Islands",
+                    "BZ": "Belize",
+                    "VC": "Saint Vincent and the Grenadines",
+                    "MN": "Mongolia",
+                    "MZ": "Mozambique",
+                    "ML": "Mali",
+                    "AO": "Angola",
+                    "GF": "French Guiana",
+                    "UZ": "Uzbekistan",
+                    "DJ": "Djibouti",
+                    "BF": "Burkina Faso",
+                    "MC": "Monaco",
+                    "TG": "Togo",
+                    "GL": "Greenland",
+                    "GA": "Gabon",
+                    "GI": "Gibraltar",
+                    "CD": "Democratic Republic of the Congo",
+                    "KG": "Kyrgyzstan",
+                    "PG": "Papua New Guinea",
+                    "BT": "Bhutan",
+                    "KN": "Saint Kitts and Nevis",
+                    "SZ": "Swaziland",
+                    "LS": "Lesotho",
+                    "LA": "Laos",
+                    "LI": "Liechtenstein",
+                    "MP": "Northern Mariana Islands",
+                    "SR": "Suriname",
+                    "SC": "Seychelles",
+                    "VG": "British Virgin Islands",
+                    "TC": "Turks and Caicos Islands",
+                    "DM": "Dominica",
+                    "MR": "Mauritania",
+                    "AX": "\u00c5land Islands",
+                    "SM": "San Marino",
+                    "SL": "Sierra Leone",
+                    "NE": "Niger",
+                    "CG": "Republic of the Congo",
+                    "AI": "Anguilla",
+                    "YT": "Mayotte",
+                    "CV": "Cape Verde",
+                    "GN": "Guinea",
+                    "TM": "Turkmenistan",
+                    "BI": "Burundi",
+                    "TJ": "Tajikistan",
+                    "VU": "Vanuatu",
+                    "SB": "Solomon Islands",
+                    "ER": "Eritrea",
+                    "WS": "Samoa",
+                    "AS": "American Samoa",
+                    "FK": "Falkland Islands",
+                    "GQ": "Equatorial Guinea",
+                    "TO": "Tonga",
+                    "KM": "Comoros",
+                    "PW": "Palau",
+                    "FM": "Federated States of Micronesia",
+                    "CF": "Central African Republic",
+                    "SO": "Somalia",
+                    "MH": "Marshall Islands",
+                    "VA": "Vatican City",
+                    "TD": "Chad",
+                    "KI": "Kiribati",
+                    "ST": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+                    "TV": "Tuvalu",
+                    "NR": "Nauru",
+                    "RE": "R\u00e9union",
+                    "LR": "Liberia",
+                    "ZW": "Zimbabwe",
+                    "CI": "C\u00f4te d'Ivoire",
+                    "MM": "Myanmar (Burma)",
+                    "AN": "Netherlands Antilles",
+                    "AQ": "Antarctica",
+                    "BQ": "Bonaire, Sint Eustatius and Saba",
+                    "BV": "Bouvet Island",
+                    "IO": "British Indian Ocean Territory",
+                    "CX": "Christmas Island",
+                    "CC": "Cocos (Keeling) Islands",
+                    "CK": "Cook Islands",
+                    "CW": "Cura\u00e7ao",
+                    "TF": "French Southern Territories",
+                    "GW": "Guinea-Bissau",
+                    "HM": "Heard Island and McDonald Islands",
+                    "XK": "Kosovo",
+                    "MS": "Montserrat",
+                    "NU": "Niue",
+                    "NF": "Norfolk Island",
+                    "PN": "Pitcairn",
+                    "BL": "Saint Barth\u00e9lemy",
+                    "SH": "Saint Helena",
+                    "MF": "Saint Martin",
+                    "PM": "Saint Pierre and Miquelon",
+                    "SX": "Sint Maarten",
+                    "GS": "South Georgia and the South Sandwich Islands",
+                    "SS": "South Sudan",
+                    "SJ": "Svalbard and Jan Mayen",
+                    "TL": "Timor-Leste",
+                    "TK": "Tokelau",
+                    "UM": "United States Minor Outlying Islands",
+                    "WF": "Wallis and Futuna",
+                    "EH": "Western Sahara"
+                },
+                "countriesWithCities": [
+                    "US",
+                    "GB",
+                    "CA",
+                    "AU",
+                    "FR",
+                    "ES",
+                    "IT",
+                    "SW",
+                    "NO",
+                    "DK",
+                    "DE",
+                    "BE",
+                    "VE",
+                    "TR",
+                    "CO",
+                    "FI",
+                    "JP",
+                    "CL",
+                    "CH",
+                    "AR",
+                    "SE",
+                    "NL",
+                    "LE",
+                    "PT",
+                    "GR",
+                    "NZ",
+                    "IE",
+                    "ID",
+                    "MY",
+                    "TH",
+                    "VN",
+                    "PL",
+                    "CZ",
+                    "RO",
+                    "RS",
+                    "BO",
+                    "BR",
+                    "CR",
+                    "DO",
+                    "EC",
+                    "SV",
+                    "GT",
+                    "HN",
+                    "MX",
+                    "NI",
+                    "PA",
+                    "PY",
+                    "PE",
+                    "PR",
+                    "UY",
+                    "AT",
+                    "IL",
+                    "IN",
+                    "TW",
+                    "RU",
+                    "ES",
+                    "EG",
+                    "SA",
+                    "AE",
+                    "AT",
+                    "CH",
+                    "PH",
+                    "ZA",
+                    "KR",
+                    "UA",
+                    "BG",
+                    "HU",
+                    "NG"
+                ],
+                "countriesWithRegions": [
+                    "US",
+                    "CA",
+                    "AU",
+                    "GB",
+                    "JP",
+                    "ES",
+                    "BR",
+                    "IN",
+                    "FR",
+                    "DE",
+                    "MX",
+                    "AR",
+                    "CO",
+                    "KR",
+                    "TH",
+                    "IL",
+                    "IT",
+                    "NL",
+                    "SE",
+                    "NO",
+                    "CH",
+                    "AT",
+                    "IE"
+                ],
+                "countriesToCurrencies": {
+                    "CA": "CAD",
+                    "GB": "GBP",
+                    "US": "USD",
+                    "AF": "USD",
+                    "AX": "USD",
+                    "AL": "USD",
+                    "DZ": "DZD",
+                    "AS": "USD",
+                    "AD": "USD",
+                    "AO": "USD",
+                    "AI": "USD",
+                    "AQ": "USD",
+                    "AG": "USD",
+                    "AR": "ARS",
+                    "AM": "USD",
+                    "AW": "USD",
+                    "AU": "AUD",
+                    "AT": "EUR",
+                    "AZ": "USD",
+                    "BH": "USD",
+                    "BD": "BDT",
+                    "BB": "USD",
+                    "BY": "USD",
+                    "BE": "EUR",
+                    "BZ": "USD",
+                    "BJ": "USD",
+                    "BM": "USD",
+                    "BT": "USD",
+                    "BO": "BOB",
+                    "BQ": "USD",
+                    "BA": "USD",
+                    "BW": "USD",
+                    "BV": "USD",
+                    "BR": "BRL",
+                    "IO": "USD",
+                    "VG": "USD",
+                    "BN": "USD",
+                    "BG": "USD",
+                    "BF": "USD",
+                    "BI": "USD",
+                    "KH": "USD",
+                    "CM": "USD",
+                    "CV": "USD",
+                    "KY": "USD",
+                    "CI": "USD",
+                    "CF": "USD",
+                    "TD": "USD",
+                    "CL": "CLP",
+                    "CN": "CNY",
+                    "CX": "USD",
+                    "CC": "USD",
+                    "CO": "COP",
+                    "KM": "USD",
+                    "CK": "USD",
+                    "CR": "CRC",
+                    "HR": "USD",
+                    "CU": "USD",
+                    "CW": "USD",
+                    "CY": "EUR",
+                    "CZ": "CZK",
+                    "CD": "USD",
+                    "DK": "DKK",
+                    "DJ": "USD",
+                    "DM": "USD",
+                    "DO": "USD",
+                    "EC": "USD",
+                    "EG": "EGP",
+                    "SV": "USD",
+                    "GQ": "USD",
+                    "ER": "USD",
+                    "EE": "EUR",
+                    "ET": "USD",
+                    "FK": "USD",
+                    "FO": "USD",
+                    "FM": "USD",
+                    "FJ": "USD",
+                    "FI": "EUR",
+                    "FR": "EUR",
+                    "GF": "USD",
+                    "PF": "USD",
+                    "TF": "USD",
+                    "GA": "USD",
+                    "GE": "USD",
+                    "DE": "EUR",
+                    "GH": "USD",
+                    "GI": "USD",
+                    "GR": "EUR",
+                    "GL": "USD",
+                    "GD": "USD",
+                    "GP": "USD",
+                    "GU": "USD",
+                    "GT": "GTQ",
+                    "GG": "USD",
+                    "GN": "USD",
+                    "GW": "USD",
+                    "GY": "USD",
+                    "HT": "USD",
+                    "HM": "USD",
+                    "HN": "HNL",
+                    "HK": "HKD",
+                    "HU": "HUF",
+                    "IS": "ISK",
+                    "IN": "INR",
+                    "ID": "IDR",
+                    "IR": "USD",
+                    "IQ": "USD",
+                    "IE": "EUR",
+                    "IM": "USD",
+                    "IL": "ILS",
+                    "IT": "EUR",
+                    "JM": "USD",
+                    "JP": "JPY",
+                    "JE": "USD",
+                    "JO": "USD",
+                    "KZ": "USD",
+                    "KE": "KES",
+                    "KI": "USD",
+                    "XK": "USD",
+                    "KW": "USD",
+                    "KG": "USD",
+                    "LA": "USD",
+                    "LV": "USD",
+                    "LB": "USD",
+                    "LS": "ZAR",
+                    "LR": "USD",
+                    "LY": "USD",
+                    "LI": "USD",
+                    "LT": "USD",
+                    "LU": "EUR",
+                    "MO": "MOP",
+                    "MK": "USD",
+                    "MG": "USD",
+                    "MW": "USD",
+                    "MY": "MYR",
+                    "MV": "USD",
+                    "ML": "USD",
+                    "MT": "EUR",
+                    "MH": "USD",
+                    "MQ": "USD",
+                    "MR": "USD",
+                    "MU": "USD",
+                    "YT": "USD",
+                    "MX": "MXN",
+                    "MD": "USD",
+                    "MC": "EUR",
+                    "MN": "USD",
+                    "ME": "USD",
+                    "MS": "USD",
+                    "MA": "USD",
+                    "MZ": "USD",
+                    "MM": "USD",
+                    "NA": "ZAR",
+                    "NR": "USD",
+                    "NP": "USD",
+                    "NL": "EUR",
+                    "AN": "USD",
+                    "NC": "USD",
+                    "NZ": "NZD",
+                    "NI": "NIO",
+                    "NE": "USD",
+                    "NG": "NGN",
+                    "NU": "USD",
+                    "NF": "USD",
+                    "KP": "USD",
+                    "MP": "USD",
+                    "NO": "NOK",
+                    "OM": "USD",
+                    "PK": "PKR",
+                    "PW": "USD",
+                    "PS": "USD",
+                    "PA": "USD",
+                    "PG": "USD",
+                    "PY": "PYG",
+                    "PE": "PEN",
+                    "PH": "PHP",
+                    "PN": "USD",
+                    "PL": "PLN",
+                    "PT": "EUR",
+                    "PR": "USD",
+                    "QA": "QAR",
+                    "RE": "USD",
+                    "CG": "USD",
+                    "RO": "RON",
+                    "RU": "RUB",
+                    "RW": "USD",
+                    "BL": "USD",
+                    "SH": "USD",
+                    "KN": "USD",
+                    "MF": "USD",
+                    "PM": "USD",
+                    "VC": "USD",
+                    "WS": "USD",
+                    "SM": "USD",
+                    "ST": "USD",
+                    "SA": "SAR",
+                    "SN": "USD",
+                    "RS": "USD",
+                    "SC": "USD",
+                    "SL": "USD",
+                    "SG": "SGD",
+                    "SX": "USD",
+                    "SK": "EUR",
+                    "SI": "EUR",
+                    "SB": "USD",
+                    "SO": "USD",
+                    "ZA": "ZAR",
+                    "GS": "USD",
+                    "KR": "KRW",
+                    "SS": "USD",
+                    "ES": "EUR",
+                    "LK": "USD",
+                    "LC": "USD",
+                    "SD": "USD",
+                    "SR": "USD",
+                    "SJ": "USD",
+                    "SZ": "ZAR",
+                    "SE": "SEK",
+                    "CH": "CHF",
+                    "SY": "USD",
+                    "TW": "TWD",
+                    "TJ": "USD",
+                    "TZ": "USD",
+                    "TH": "THB",
+                    "BS": "USD",
+                    "GM": "USD",
+                    "TL": "USD",
+                    "TG": "USD",
+                    "TK": "USD",
+                    "TO": "USD",
+                    "TT": "USD",
+                    "TN": "USD",
+                    "TR": "TRY",
+                    "TM": "USD",
+                    "TC": "USD",
+                    "TV": "USD",
+                    "UG": "USD",
+                    "UA": "USD",
+                    "AE": "AED",
+                    "UM": "USD",
+                    "UY": "UYU",
+                    "VI": "USD",
+                    "UZ": "USD",
+                    "VU": "USD",
+                    "VA": "USD",
+                    "VE": "USD",
+                    "VN": "VND",
+                    "WF": "USD",
+                    "EH": "USD",
+                    "YE": "USD",
+                    "ZM": "USD",
+                    "ZW": "USD"
+                },
+                "countriesToTerritories": {
+                    "CA": [],
+                    "GB": [],
+                    "US": [
+                        "AS",
+                        "GU",
+                        "MP",
+                        "PR",
+                        "UM",
+                        "VI"
+                    ],
+                    "AF": [],
+                    "AX": [],
+                    "AL": [],
+                    "DZ": [],
+                    "AS": [],
+                    "AD": [],
+                    "AO": [],
+                    "AI": [],
+                    "AQ": [],
+                    "AG": [],
+                    "AR": [],
+                    "AM": [],
+                    "AW": [],
+                    "AU": [
+                        "CX",
+                        "CC",
+                        "HM",
+                        "NF"
+                    ],
+                    "AT": [],
+                    "AZ": [],
+                    "BH": [],
+                    "BD": [],
+                    "BB": [],
+                    "BY": [],
+                    "BE": [],
+                    "BZ": [],
+                    "BJ": [],
+                    "BM": [],
+                    "BT": [],
+                    "BO": [],
+                    "BQ": [],
+                    "BA": [],
+                    "BW": [],
+                    "BV": [],
+                    "BR": [],
+                    "IO": [],
+                    "VG": [],
+                    "BN": [],
+                    "BG": [],
+                    "BF": [],
+                    "BI": [],
+                    "KH": [],
+                    "CM": [],
+                    "CV": [],
+                    "KY": [],
+                    "CI": [],
+                    "CF": [],
+                    "TD": [],
+                    "CL": [],
+                    "CN": [],
+                    "CX": [],
+                    "CC": [],
+                    "CO": [],
+                    "KM": [],
+                    "CK": [],
+                    "CR": [],
+                    "HR": [],
+                    "CU": [],
+                    "CW": [],
+                    "CY": [],
+                    "CZ": [],
+                    "CD": [],
+                    "DK": [
+                        "FO",
+                        "GL"
+                    ],
+                    "DJ": [],
+                    "DM": [],
+                    "DO": [],
+                    "EC": [],
+                    "EG": [],
+                    "SV": [],
+                    "GQ": [],
+                    "ER": [],
+                    "EE": [],
+                    "ET": [],
+                    "FK": [],
+                    "FO": [],
+                    "FM": [],
+                    "FJ": [],
+                    "FI": [
+                        "AX"
+                    ],
+                    "FR": [
+                        "GP",
+                        "MQ",
+                        "MF",
+                        "BL",
+                        "PM",
+                        "RE",
+                        "YT",
+                        "GF",
+                        "PF",
+                        "TF",
+                        "NC",
+                        "WF"
+                    ],
+                    "GF": [],
+                    "PF": [],
+                    "TF": [],
+                    "GA": [],
+                    "GE": [],
+                    "DE": [],
+                    "GH": [],
+                    "GI": [],
+                    "GR": [],
+                    "GL": [],
+                    "GD": [],
+                    "GP": [],
+                    "GU": [],
+                    "GT": [],
+                    "GG": [],
+                    "GN": [],
+                    "GW": [],
+                    "GY": [],
+                    "HT": [],
+                    "HM": [],
+                    "HN": [],
+                    "HK": [],
+                    "HU": [],
+                    "IS": [],
+                    "IN": [],
+                    "ID": [],
+                    "IR": [],
+                    "IQ": [],
+                    "IE": [],
+                    "IM": [],
+                    "IL": [],
+                    "IT": [],
+                    "JM": [],
+                    "JP": [],
+                    "JE": [],
+                    "JO": [],
+                    "KZ": [],
+                    "KE": [],
+                    "KI": [],
+                    "XK": [],
+                    "KW": [],
+                    "KG": [],
+                    "LA": [],
+                    "LV": [],
+                    "LB": [],
+                    "LS": [],
+                    "LR": [],
+                    "LY": [],
+                    "LI": [],
+                    "LT": [],
+                    "LU": [],
+                    "MO": [],
+                    "MK": [],
+                    "MG": [],
+                    "MW": [],
+                    "MY": [],
+                    "MV": [],
+                    "ML": [],
+                    "MT": [],
+                    "MH": [],
+                    "MQ": [],
+                    "MR": [],
+                    "MU": [],
+                    "YT": [],
+                    "MX": [],
+                    "MD": [],
+                    "MC": [],
+                    "MN": [],
+                    "ME": [],
+                    "MS": [],
+                    "MA": [
+                        "EH"
+                    ],
+                    "MZ": [],
+                    "MM": [],
+                    "NA": [],
+                    "NR": [],
+                    "NP": [],
+                    "NL": [
+                        "AW",
+                        "BQ",
+                        "CW",
+                        "SX"
+                    ],
+                    "AN": [],
+                    "NC": [],
+                    "NZ": [
+                        "CK",
+                        "NU",
+                        "TK"
+                    ],
+                    "NI": [],
+                    "NE": [],
+                    "NG": [],
+                    "NU": [],
+                    "NF": [],
+                    "KP": [],
+                    "MP": [],
+                    "NO": [
+                        "SJ"
+                    ],
+                    "OM": [],
+                    "PK": [],
+                    "PW": [],
+                    "PS": [],
+                    "PA": [],
+                    "PG": [],
+                    "PY": [],
+                    "PE": [],
+                    "PH": [],
+                    "PN": [],
+                    "PL": [],
+                    "PT": [],
+                    "PR": [],
+                    "QA": [],
+                    "RE": [],
+                    "CG": [],
+                    "RO": [],
+                    "RU": [],
+                    "RW": [],
+                    "BL": [],
+                    "SH": [],
+                    "KN": [],
+                    "MF": [],
+                    "PM": [],
+                    "VC": [],
+                    "WS": [],
+                    "SM": [],
+                    "ST": [],
+                    "SA": [],
+                    "SN": [],
+                    "RS": [],
+                    "SC": [],
+                    "SL": [],
+                    "SG": [],
+                    "SX": [],
+                    "SK": [],
+                    "SI": [],
+                    "SB": [],
+                    "SO": [],
+                    "ZA": [],
+                    "GS": [],
+                    "KR": [],
+                    "SS": [],
+                    "ES": [],
+                    "LK": [],
+                    "LC": [],
+                    "SD": [],
+                    "SR": [],
+                    "SJ": [],
+                    "SZ": [],
+                    "SE": [],
+                    "CH": [],
+                    "SY": [],
+                    "TW": [],
+                    "TJ": [],
+                    "TZ": [],
+                    "TH": [],
+                    "BS": [],
+                    "GM": [],
+                    "TL": [],
+                    "TG": [],
+                    "TK": [],
+                    "TO": [],
+                    "TT": [],
+                    "TN": [],
+                    "TR": [],
+                    "TM": [],
+                    "TC": [],
+                    "TV": [],
+                    "UG": [],
+                    "UA": [],
+                    "AE": [],
+                    "UM": [],
+                    "UY": [],
+                    "VI": [],
+                    "UZ": [],
+                    "VU": [],
+                    "VA": [],
+                    "VE": [],
+                    "VN": [],
+                    "WF": [],
+                    "EH": [],
+                    "YE": [],
+                    "ZM": [],
+                    "ZW": []
+                },
+                "embargoedCountries": [
+                    "CU",
+                    "IR",
+                    "KP",
+                    "SD",
+                    "SY"
+                ],
+                "legalDrinkingAges": {
+                    "US": 21,
+                    "CA": 19,
+                    "GB": 18,
+                    "AR": 18,
+                    "AU": 18,
+                    "AT": 18,
+                    "BE": 18,
+                    "BR": 18,
+                    "CL": 18,
+                    "CN": 18,
+                    "CO": 18,
+                    "HR": 18,
+                    "DK": 18,
+                    "DO": 18,
+                    "EG": 0,
+                    "FI": 18,
+                    "FR": 18,
+                    "DE": 18,
+                    "GR": 18,
+                    "HK": 18,
+                    "IN": 25,
+                    "ID": 21,
+                    "IE": 18,
+                    "IL": 18,
+                    "IT": 18,
+                    "JP": 20,
+                    "JO": 18,
+                    "KW": 0,
+                    "LB": 18,
+                    "MY": 18,
+                    "MX": 18,
+                    "NL": 18,
+                    "NZ": 18,
+                    "NG": 18,
+                    "NO": 0,
+                    "PK": 18,
+                    "PA": 18,
+                    "PE": 18,
+                    "PH": 18,
+                    "PL": 18,
+                    "RU": 18,
+                    "SA": 0,
+                    "RS": 18,
+                    "SG": 18,
+                    "ZA": 18,
+                    "KR": 19,
+                    "ES": 18,
+                    "SE": 25,
+                    "CH": 18,
+                    "TW": 18,
+                    "TH": 20,
+                    "TR": 24,
+                    "AE": 0,
+                    "VE": 18,
+                    "PT": 18,
+                    "LU": 18,
+                    "BG": 18,
+                    "CZ": 18,
+                    "SI": 18,
+                    "IS": 20,
+                    "SK": 18,
+                    "LT": 18,
+                    "TT": 18,
+                    "BD": 0,
+                    "LK": 21,
+                    "KE": 18,
+                    "HU": 18,
+                    "MA": 18,
+                    "CY": 18,
+                    "JM": 18,
+                    "EC": 18,
+                    "RO": 18,
+                    "BO": 18,
+                    "GT": 18,
+                    "CR": 18,
+                    "QA": 18,
+                    "SV": 18,
+                    "HN": 18,
+                    "NI": 18,
+                    "PY": 18,
+                    "UY": 18,
+                    "PR": 18,
+                    "BA": 18,
+                    "PS": 18,
+                    "TN": 18,
+                    "BH": 18,
+                    "VN": 18,
+                    "GH": 18,
+                    "MU": 18,
+                    "UA": 18,
+                    "MT": 18,
+                    "BS": 18,
+                    "MV": 18,
+                    "OM": 18,
+                    "MK": 18,
+                    "LV": 18,
+                    "EE": 18,
+                    "IQ": 18,
+                    "DZ": 18,
+                    "AL": 18,
+                    "NP": 18,
+                    "MO": 18,
+                    "ME": 18,
+                    "SN": 18,
+                    "GE": 18,
+                    "BN": 0,
+                    "UG": 18,
+                    "GP": 18,
+                    "BB": 18,
+                    "AZ": 18,
+                    "TZ": 18,
+                    "LY": 18,
+                    "MQ": 18,
+                    "CM": 21,
+                    "BW": 18,
+                    "ET": 18,
+                    "KZ": 18,
+                    "NA": 18,
+                    "MG": 18,
+                    "NC": 18,
+                    "MD": 18,
+                    "FJ": 18,
+                    "BY": 18,
+                    "JE": 18,
+                    "GU": 18,
+                    "YE": 0,
+                    "ZM": 18,
+                    "IM": 18,
+                    "HT": 18,
+                    "KH": 18,
+                    "AW": 18,
+                    "PF": 18,
+                    "AF": 0,
+                    "BM": 18,
+                    "GY": 18,
+                    "AM": 18,
+                    "MW": 18,
+                    "AG": 18,
+                    "RW": 18,
+                    "GG": 18,
+                    "GM": 18,
+                    "FO": 18,
+                    "LC": 18,
+                    "KY": 18,
+                    "BJ": 18,
+                    "AD": 18,
+                    "GD": 18,
+                    "VI": 18,
+                    "BZ": 18,
+                    "VC": 18,
+                    "MN": 18,
+                    "MZ": 18,
+                    "ML": 18,
+                    "AO": 18,
+                    "GF": 18,
+                    "UZ": 18,
+                    "DJ": 18,
+                    "BF": 18,
+                    "MC": 18,
+                    "TG": 18,
+                    "GL": 18,
+                    "GA": 18,
+                    "GI": 18,
+                    "CD": 18,
+                    "KG": 18,
+                    "PG": 18,
+                    "BT": 18,
+                    "KN": 18,
+                    "SZ": 18,
+                    "LS": 18,
+                    "LA": 18,
+                    "LI": 18,
+                    "MP": 18,
+                    "SR": 18,
+                    "SC": 18,
+                    "VG": 18,
+                    "TC": 18,
+                    "DM": 18,
+                    "MR": 18,
+                    "AX": 18,
+                    "SM": 18,
+                    "SL": 18,
+                    "NE": 18,
+                    "CG": 18,
+                    "AI": 18,
+                    "YT": 18,
+                    "CV": 18,
+                    "GN": 18,
+                    "TM": 18,
+                    "BI": 18,
+                    "TJ": 18,
+                    "VU": 18,
+                    "SB": 21,
+                    "ER": 18,
+                    "WS": 18,
+                    "AS": 18,
+                    "FK": 18,
+                    "GQ": 18,
+                    "TO": 18,
+                    "KM": 18,
+                    "PW": 21,
+                    "FM": 21,
+                    "CF": 18,
+                    "SO": 18,
+                    "MH": 18,
+                    "VA": 18,
+                    "TD": 18,
+                    "KI": 18,
+                    "ST": 18,
+                    "TV": 18,
+                    "NR": 18,
+                    "RE": 18,
+                    "LR": 18,
+                    "ZW": 18,
+                    "CI": 18,
+                    "MM": 18,
+                    "AN": 18,
+                    "AQ": 18,
+                    "BQ": 18,
+                    "BV": 18,
+                    "IO": 18,
+                    "CX": 18,
+                    "CC": 18,
+                    "CK": 18,
+                    "CW": 18,
+                    "TF": 18,
+                    "GW": 18,
+                    "HM": 18,
+                    "XK": 18,
+                    "MS": 18,
+                    "NU": 18,
+                    "NF": 18,
+                    "PN": 18,
+                    "BL": 18,
+                    "SH": 18,
+                    "MF": 18,
+                    "PM": 18,
+                    "SX": 18,
+                    "GS": 18,
+                    "SS": 18,
+                    "SJ": 18,
+                    "TL": 18,
+                    "TK": 18,
+                    "UM": 18,
+                    "WF": 18,
+                    "EH": 18
+                }
+            },
+            151
+        ],
+        [
+            "cr:1642797",
+            [
+                "BanzaiBase"
+            ],
+            {
+                "__rc": [
+                    "BanzaiBase",
+                    "Aa1FGeUS_78LLd3xmRdCk1LsuZ2ujSFva2Jw4twLMCGCCtnAOTMi27R4HdF6UPuQm1TSBJw3r-ZM7SiRJCPGJkkRkAs"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:917439",
+            [
+                "PageTransitionsBlue"
+            ],
+            {
+                "__rc": [
+                    "PageTransitionsBlue",
+                    "Aa1FGeUS_78LLd3xmRdCk1LsuZ2ujSFva2Jw4twLMCGCCtnAOTMi27R4HdF6UPuQm1TSBJw3r-ZM7SiRJCPGJkkRkAs"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1108857",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa07MX8YYLUzJ9oJTWXkXa_EUBT2c9273G4Zc9vvDajA72XUO7VewdWSIXTuc5IVIx2k9Vov8md3mjgpzg"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1294158",
+            [
+                "React.classic"
+            ],
+            {
+                "__rc": [
+                    "React.classic",
+                    "Aa2Sjgc8FNdH2ZW-XlJ8fXQeiF3AoKNoK7lE-hpCdk_r621dlg9Ee4D2FxtRnKfcoUVjsVycp1pvEmKGabLa2gTtDx9a"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1294246",
+            [
+                "ReactDOM.classic"
+            ],
+            {
+                "__rc": [
+                    "ReactDOM.classic",
+                    "Aa2Sjgc8FNdH2ZW-XlJ8fXQeiF3AoKNoK7lE-hpCdk_r621dlg9Ee4D2FxtRnKfcoUVjsVycp1pvEmKGabLa2gTtDx9a"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1294159",
+            [
+                "ReactDOM.classic"
+            ],
+            {
+                "__rc": [
+                    "ReactDOM.classic",
+                    "Aa2Sjgc8FNdH2ZW-XlJ8fXQeiF3AoKNoK7lE-hpCdk_r621dlg9Ee4D2FxtRnKfcoUVjsVycp1pvEmKGabLa2gTtDx9a"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:540",
+            [
+                "ReactDOM"
+            ],
+            {
+                "__rc": [
+                    "ReactDOM",
+                    "Aa1FGeUS_78LLd3xmRdCk1LsuZ2ujSFva2Jw4twLMCGCCtnAOTMi27R4HdF6UPuQm1TSBJw3r-ZM7SiRJCPGJkkRkAs"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:10503",
+            [],
+            {
+                "__rc": [
+                    null,
+                    null
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:11202",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa07MX8YYLUzJ9oJTWXkXa_EUBT2c9273G4Zc9vvDajA72XUO7VewdWSIXTuc5IVIx2k9Vov8md3mjgpzg"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:11262",
+            [
+                "GeoPrivateModal_DEPRECATED.react"
+            ],
+            {
+                "__rc": [
+                    "GeoPrivateModal_DEPRECATED.react",
+                    "Aa2fNMhttxsjHfvwNOM-7o9r23euNbBkWatXjVSJMVkGL9-ZmPaWCrp2ObIJFq5Ux-yHxJowrKNP9-ZXUIZ87Ri-bu0vLLq1kKB7WOs"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:11464",
+            [
+                "GeoPrivateTooltip_DEPRECATED.react"
+            ],
+            {
+                "__rc": [
+                    "GeoPrivateTooltip_DEPRECATED.react",
+                    "Aa1rvEtutm-_xqzQefvIIb3PIFzR7VuoWR8K2gnWObMAXJQsPCmFQvegZGLT0IzlV92v5l8RUT6OXfU3S88q"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:888908",
+            [
+                "warningBlue"
+            ],
+            {
+                "__rc": [
+                    "warningBlue",
+                    "Aa1FGeUS_78LLd3xmRdCk1LsuZ2ujSFva2Jw4twLMCGCCtnAOTMi27R4HdF6UPuQm1TSBJw3r-ZM7SiRJCPGJkkRkAs"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:896461",
+            [
+                "setIntervalBlue"
+            ],
+            {
+                "__rc": [
+                    "setIntervalBlue",
+                    "Aa1FGeUS_78LLd3xmRdCk1LsuZ2ujSFva2Jw4twLMCGCCtnAOTMi27R4HdF6UPuQm1TSBJw3r-ZM7SiRJCPGJkkRkAs"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1064332",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa3a7UIAdStU7iHicNoXcwvQu5_IqBcw2isBewfTPd0clKHA68JCx97WgrDYB73g-t_aI8O_4kB5Sts"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1105154",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa07MX8YYLUzJ9oJTWXkXa_EUBT2c9273G4Zc9vvDajA72XUO7VewdWSIXTuc5IVIx2k9Vov8md3mjgpzg"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1106516",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa3AcxLA6McqR38KXVZPytUerZj7UtgK64vG5HNbLgdN4HSr4dWJQ_8WawgVvZQEL5zi6f1c4qqPnjfJ"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1353359",
+            [
+                "EventListenerImplForBlue"
+            ],
+            {
+                "__rc": [
+                    "EventListenerImplForBlue",
+                    "Aa0MQUskLUNmYBR_43j6uccumthsYvxr5NDfogk-OPNklENxE5D82H9TynbJo4xj0B7MhU6_2iq8HgIH9Fw7OaQBS3knPTsF-A"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1385201",
+            [
+                "RelayFBDefaultEnvironment"
+            ],
+            {
+                "__rc": [
+                    "RelayFBDefaultEnvironment",
+                    "Aa2cpIagr7EWiJEvdbvX7j6x1WgfFjRFsBSJrA5EmOqyvpl6zvOxKs2A8VHNhO1YovM2bovPJBBJn0sISDsu8fZ2UZOszw"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1487782",
+            [
+                "ReactBrowserEventEmitter_DO_NOT_USE"
+            ],
+            {
+                "__rc": [
+                    "ReactBrowserEventEmitter_DO_NOT_USE",
+                    "Aa2Sjgc8FNdH2ZW-XlJ8fXQeiF3AoKNoK7lE-hpCdk_r621dlg9Ee4D2FxtRnKfcoUVjsVycp1pvEmKGabLa2gTtDx9a"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1641505",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa1GR4ew_dEV-4vPEC7YvWQIlNitoAD8RPoqt1wLQAnje_Xtsv3TazpFglX9p2ajcjGRdwhblZAJzw1Ve3Xbw-0hy8w9pF8"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1708227",
+            [
+                "useThrottledBlue"
+            ],
+            {
+                "__rc": [
+                    "useThrottledBlue",
+                    "Aa1FGeUS_78LLd3xmRdCk1LsuZ2ujSFva2Jw4twLMCGCCtnAOTMi27R4HdF6UPuQm1TSBJw3r-ZM7SiRJCPGJkkRkAs"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1817285",
+            [
+                "GeoBaseText.react"
+            ],
+            {
+                "__rc": [
+                    "GeoBaseText.react",
+                    "Aa0XTRQII6AFk72XTD23koNQKEqLLdcQnDI-wYmDDMAUbqwYpZKKjKfHfzNFKxKZd5hXEKo18VJCDdpEhGi8H0aqb3xIulo"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1817286",
+            [
+                "GeoLink.react"
+            ],
+            {
+                "__rc": [
+                    "GeoLink.react",
+                    "Aa0XTRQII6AFk72XTD23koNQKEqLLdcQnDI-wYmDDMAUbqwYpZKKjKfHfzNFKxKZd5hXEKo18VJCDdpEhGi8H0aqb3xIulo"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1817306",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa0XTRQII6AFk72XTD23koNQKEqLLdcQnDI-wYmDDMAUbqwYpZKKjKfHfzNFKxKZd5hXEKo18VJCDdpEhGi8H0aqb3xIulo"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1817307",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa0XTRQII6AFk72XTD23koNQKEqLLdcQnDI-wYmDDMAUbqwYpZKKjKfHfzNFKxKZd5hXEKo18VJCDdpEhGi8H0aqb3xIulo"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1823576",
+            [
+                "GeoButton.react"
+            ],
+            {
+                "__rc": [
+                    "GeoButton.react",
+                    "Aa0XTRQII6AFk72XTD23koNQKEqLLdcQnDI-wYmDDMAUbqwYpZKKjKfHfzNFKxKZd5hXEKo18VJCDdpEhGi8H0aqb3xIulo"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1827978",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa0XTRQII6AFk72XTD23koNQKEqLLdcQnDI-wYmDDMAUbqwYpZKKjKfHfzNFKxKZd5hXEKo18VJCDdpEhGi8H0aqb3xIulo"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1850014",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa0XTRQII6AFk72XTD23koNQKEqLLdcQnDI-wYmDDMAUbqwYpZKKjKfHfzNFKxKZd5hXEKo18VJCDdpEhGi8H0aqb3xIulo"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1889321",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa0XTRQII6AFk72XTD23koNQKEqLLdcQnDI-wYmDDMAUbqwYpZKKjKfHfzNFKxKZd5hXEKo18VJCDdpEhGi8H0aqb3xIulo"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1902682",
+            [
+                "AdLibraryPageProfileIcon.react"
+            ],
+            {
+                "__rc": [
+                    "AdLibraryPageProfileIcon.react",
+                    "Aa3M-eo4b_Qys7k07eLcDYdTNRKNMO1RJx6s4WzkUNkFdz5eG5soPrz_sOPwDYLSxcwgNoQIgjzqIRkYM6BsnVe-FOQE73IGFZ70a7buBw"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1902683",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa3M-eo4b_Qys7k07eLcDYdTNRKNMO1RJx6s4WzkUNkFdz5eG5soPrz_sOPwDYLSxcwgNoQIgjzqIRkYM6BsnVe-FOQE73IGFZ70a7buBw"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1925340",
+            [
+                "EnvironmentTimezoneDecisionTree-tz2021a"
+            ],
+            {
+                "__rc": [
+                    "EnvironmentTimezoneDecisionTree-tz2021a",
+                    "Aa2TJqYKD6bscFhLHCZWsEe7J819sYIjwlW9uQ4wnvqlm8wCtG-4OpnQhZUygs_nZ81FdGxKmZuPwhdt4X5sU1byOqPBIZZM"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1925341",
+            [
+                "TimezoneNamesData-tz2021a"
+            ],
+            {
+                "__rc": [
+                    "TimezoneNamesData-tz2021a",
+                    "Aa2TJqYKD6bscFhLHCZWsEe7J819sYIjwlW9uQ4wnvqlm8wCtG-4OpnQhZUygs_nZ81FdGxKmZuPwhdt4X5sU1byOqPBIZZM"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1925344",
+            [
+                "TimezoneRulesFrom2009-tz2021a"
+            ],
+            {
+                "__rc": [
+                    "TimezoneRulesFrom2009-tz2021a",
+                    "Aa2TJqYKD6bscFhLHCZWsEe7J819sYIjwlW9uQ4wnvqlm8wCtG-4OpnQhZUygs_nZ81FdGxKmZuPwhdt4X5sU1byOqPBIZZM"
+                ]
+            },
+            -1
+        ],
+        [
+            "BanzaiConfig",
+            [],
+            {
+                "MAX_SIZE": 10000,
+                "MAX_WAIT": 150000,
+                "MIN_WAIT": null,
+                "RESTORE_WAIT": 150000,
+                "blacklist": [
+                    "time_spent"
+                ],
+                "disabled": false,
+                "gks": {
+                    "boosted_pagelikes": true,
+                    "mercury_send_error_logging": true,
+                    "platform_oauth_client_events": true,
+                    "visibility_tracking": true,
+                    "graphexplorer": true,
+                    "sticker_search_ranking": true
+                },
+                "known_routes": [
+                    "artillery_javascript_actions",
+                    "artillery_javascript_trace",
+                    "artillery_logger_data",
+                    "logger",
+                    "falco",
+                    "gk2_exposure",
+                    "js_error_logging",
+                    "loom_trace",
+                    "marauder",
+                    "perfx_custom_logger_endpoint",
+                    "qex",
+                    "require_cond_exposure_logging",
+                    "sri_logger_data"
+                ],
+                "should_drop_unknown_routes": true,
+                "should_log_unknown_routes": false
+            },
+            7
+        ],
+        [
+            "PageTransitionsConfig",
+            [],
+            {
+                "reloadOnBootloadError": true
+            },
+            1067
+        ],
+        [
+            "CoreWarningGK",
+            [],
+            {
+                "forceWarning": false
+            },
+            725
+        ],
+        [
+            "TransportSelectingClientContextualConfig",
+            [],
+            {
+                "rawConfig": "{\"name\":\"rti\/web_rs_transport_selecting_client\",\"cctype\":\"dense\",\"version\":1,\"policy_id\":\"static\",\"sample_rate\":1000,\"contexts\":[{\"name\":\"method\",\"type\":\"STRING\",\"callsite\":true,\"buckets\":[{\"name\":\"rollout_group_1\",\"strategy\":\"in\",\"values\":[\"FBGQLS:FEEDBACK_LIKE_SUBSCRIBE\",\"Falco\",\"FBLQ:comet_notifications_live_query_experimental\"]},{\"name\":\"rollout_group_5\",\"strategy\":\"in\",\"values\":[\"FBGQLS:LIVE_VIDEO_COMMENT_CREATE_SUBSCRIBE\"]},{\"name\":\"rollout_group_6\",\"strategy\":\"in\",\"values\":[\"FBGQLS:COMMENT_CREATE_SUBSCRIBE\",\"FBGQLS:COMMENT_LIKE_SUBSCRIBE\",\"FBGQLS:FEEDBACK_COMMENT_PERMISSION_TOGGLE_SUBSCRIBE\",\"FBGQLS:FEEDBACK_TYPING_SUBSCRIBE\"]},{\"name\":\"rollout_group_4\",\"strategy\":\"regex\",\"values\":[\"FBGQLS:.*\"]},{\"name\":\"rollout_group_3\",\"strategy\":\"regex\",\"values\":[\"FBLQ:.*\"]},{\"name\":\"skywalker\",\"strategy\":\"in\",\"values\":[\"SKY:test_topic\",\"live\/api\/copyright\",\"intern_notify\",\"locplat\/ttm\",\"rti_widget_dashboard\",\"gizmo\/manage\",\"srt\/user_metrics_counter\",\"media_manager_instagram_composer_create_update\",\"cubism_annotations\/fleet_health\",\"srt\/notifications\",\"ads\/reporting\/snapshot\",\"unidash\/widget\",\"www\/sr\/hot_reload\",\"cubism_annotations\",\"ads\/reporting\/export\",\"pubx\/notification\/update\"]},{\"name\":\"default\",\"strategy\":\"catch_all\"}]}],\"outputs\":[{\"name\":\"group\",\"type\":\"STRING\"},{\"name\":\"dgwUpsampleMultiplier\",\"type\":\"FLOAT\"}],\"vector\":[\"group1\",\"1.0\",\"group5\",\"10.0\",\"group6\",\"100.0\",\"group4\",\"1.0\",\"group3\",\"1.0\",\"skywalker\",\"1.0\",\"default_group\",\"1.0\"],\"vectorDefaults\":[\"default_group\",\"1.0\"],\"timestamp\":1630022035}"
+            },
+            5968
+        ],
+        [
+            "RTISubscriptionManagerConfig",
+            [],
+            {
+                "config": {
+                    "max_subscriptions": 150,
+                    "www_idle_unsubscribe_min_time_ms": 600000,
+                    "www_idle_unsubscribe_times_ms": {
+                        "feedback_like_subscribe": 600000,
+                        "comment_like_subscribe": 600000,
+                        "feedback_typing_subscribe": 600000,
+                        "comment_create_subscribe": 1800000,
+                        "video_tip_jar_payment_event_subscribe": 14400000
+                    },
+                    "www_unevictable_topic_regexes": [
+                        "^(graphql|gqls)\/web_notification_receive_subscribe",
+                        "^www\/sr\/hot_reload\/"
+                    ],
+                    "autobot_tiers": {
+                        "latest": "realtime.skywalker.autobot.latest",
+                        "intern": "realtime.skywalker.autobot.intern",
+                        "sb": "realtime.skywalker.autobot.sb"
+                    },
+                    "max_subscription_flush_batch_size": 100
+                },
+                "autobot": {},
+                "assimilator": {},
+                "unsubscribe_release": true,
+                "bladerunner_www_sandbox": null,
+                "is_intern": false
+            },
+            1081
+        ],
+        [
+            "GQLSHeartbeatConfig",
+            [],
+            {
+                "heartbeat_interval": 5000
+            },
+            3674
+        ],
+        [
+            "MqttWebDeviceID",
+            [],
+            {
+                "clientID": "cfab9356-6f24-4530-b3b9-b71f4d0af8a8"
+            },
+            5003
+        ],
+        [
+            "LiveQueryWebClientPollingSwitchList",
+            [],
+            {
+                "liveQueryWebClientPollingSwitchList": {
+                    "example_config_id_to_be_switched": 10000
+                }
+            },
+            5842
+        ],
+        [
+            "cr:692209",
+            [
+                "cancelIdleCallbackBlue"
+            ],
+            {
+                "__rc": [
+                    "cancelIdleCallbackBlue",
+                    "Aa1FGeUS_78LLd3xmRdCk1LsuZ2ujSFva2Jw4twLMCGCCtnAOTMi27R4HdF6UPuQm1TSBJw3r-ZM7SiRJCPGJkkRkAs"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1292365",
+            [
+                "React-prod.classic"
+            ],
+            {
+                "__rc": [
+                    "React-prod.classic",
+                    "Aa07MX8YYLUzJ9oJTWXkXa_EUBT2c9273G4Zc9vvDajA72XUO7VewdWSIXTuc5IVIx2k9Vov8md3mjgpzg"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1344485",
+            [
+                "ReactDOM.classic.prod-or-profiling"
+            ],
+            {
+                "__rc": [
+                    "ReactDOM.classic.prod-or-profiling",
+                    "Aa07MX8YYLUzJ9oJTWXkXa_EUBT2c9273G4Zc9vvDajA72XUO7VewdWSIXTuc5IVIx2k9Vov8md3mjgpzg"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:983844",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa07MX8YYLUzJ9oJTWXkXa_EUBT2c9273G4Zc9vvDajA72XUO7VewdWSIXTuc5IVIx2k9Vov8md3mjgpzg"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1110430",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa07MX8YYLUzJ9oJTWXkXa_EUBT2c9273G4Zc9vvDajA72XUO7VewdWSIXTuc5IVIx2k9Vov8md3mjgpzg"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1121434",
+            [],
+            {
+                "__rc": [
+                    null,
+                    "Aa07MX8YYLUzJ9oJTWXkXa_EUBT2c9273G4Zc9vvDajA72XUO7VewdWSIXTuc5IVIx2k9Vov8md3mjgpzg"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1987488",
+            [
+                "DGWRequestStreamDeferredClient"
+            ],
+            {
+                "__rc": [
+                    "DGWRequestStreamDeferredClient",
+                    "Aa3ee9ydpmpN3WduhoKdBDgdboUrTTf0gyabAgQj4s_03wR2QmjLx-RDsKepnddKEfpU2Z980iklQEFRgcKXMA"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1344486",
+            [
+                "ReactDOM.classic.prod"
+            ],
+            {
+                "__rc": [
+                    "ReactDOM.classic.prod",
+                    "Aa22qu1PQxDmNQ0PJFccHFQxLRGoH8RtNrZXVUA9Ciuyo6VYr3tSDQys3WpeuElrKkPVWU2zc_Cq-64VzbkajpoD6KKBOpVvSw"
+                ]
+            },
+            -1
+        ],
+        [
+            "cr:1344487",
+            [
+                "ReactDOM-prod.classic"
+            ],
+            {
+                "__rc": [
+                    "ReactDOM-prod.classic",
+                    "Aa3aBer2RQlbl2fxkkQw6bq1JYEl_7actzOkUWXP-wP5_2Uz76A5okXKP-tmRyrlfM7PaFV493aM1hF6w22Xbx2y8apL4FFhuEvMi_AP"
+                ]
+            },
+            -1
+        ]
+    ],
+    "instances": [
+        [
+            "__inst_5b4d0c00_0_0_1n",
+            [
+                "Menu",
+                "XUIMenuWithSquareCorner",
+                "XUIMenuTheme"
+            ],
+            [
+                [],
+                {
+                    "id": "u_0_0_qy",
+                    "behaviors": [
+                        {
+                            "__m": "XUIMenuWithSquareCorner"
+                        }
+                    ],
+                    "theme": {
+                        "__m": "XUIMenuTheme"
+                    }
+                }
+            ],
+            2
+        ],
+        [
+            "__inst_5b4d0c00_0_1_vx",
+            [
+                "Menu",
+                "MenuItem",
+                "__markup_3310c079_0_0_Mk",
+                "HTML",
+                "__markup_3310c079_0_1_lG",
+                "__markup_3310c079_0_2_5b",
+                "__markup_3310c079_0_3_RO",
+                "XUIMenuWithSquareCorner",
+                "XUIMenuTheme"
+            ],
+            [
+                [
+                    {
+                        "value": "key_shortcuts",
+                        "ctor": {
+                            "__m": "MenuItem"
+                        },
+                        "markup": {
+                            "__m": "__markup_3310c079_0_0_Mk"
+                        },
+                        "label": "Keyboard shortcut help...",
+                        "title": "",
+                        "className": null
+                    },
+                    {
+                        "href": "\/help\/accessibility",
+                        "target": "_blank",
+                        "value": "help_center",
+                        "ctor": {
+                            "__m": "MenuItem"
+                        },
+                        "markup": {
+                            "__m": "__markup_3310c079_0_1_lG"
+                        },
+                        "label": "Accessibility Help Centre",
+                        "title": "",
+                        "className": null
+                    },
+                    {
+                        "href": "\/help\/contact\/accessibility",
+                        "target": "_blank",
+                        "value": "submit_feedback",
+                        "ctor": {
+                            "__m": "MenuItem"
+                        },
+                        "markup": {
+                            "__m": "__markup_3310c079_0_2_5b"
+                        },
+                        "label": "Submit feedback",
+                        "title": "",
+                        "className": null
+                    },
+                    {
+                        "href": "\/accessibility",
+                        "target": "_blank",
+                        "value": "facebook_page",
+                        "ctor": {
+                            "__m": "MenuItem"
+                        },
+                        "markup": {
+                            "__m": "__markup_3310c079_0_3_RO"
+                        },
+                        "label": "Updates from Facebook Accessibility",
+                        "title": "",
+                        "className": null
+                    }
+                ],
+                {
+                    "id": "u_0_1_Fy",
+                    "behaviors": [
+                        {
+                            "__m": "XUIMenuWithSquareCorner"
+                        }
+                    ],
+                    "theme": {
+                        "__m": "XUIMenuTheme"
+                    }
+                }
+            ],
+            2
+        ],
+        [
+            "__inst_e5ad243d_0_0_yl",
+            [
+                "PopoverMenu",
+                "__inst_1de146dc_0_1_Tq",
+                "__elem_ec77afbd_0_1_Yi",
+                "__inst_5b4d0c00_0_1_vx"
+            ],
+            [
+                {
+                    "__m": "__inst_1de146dc_0_1_Tq"
+                },
+                {
+                    "__m": "__elem_ec77afbd_0_1_Yi"
+                },
+                {
+                    "__m": "__inst_5b4d0c00_0_1_vx"
+                },
+                []
+            ],
+            2
+        ],
+        [
+            "__inst_e5ad243d_0_1_4d",
+            [
+                "PopoverMenu",
+                "__inst_1de146dc_0_0_0B",
+                "__elem_ec77afbd_0_0_F\/",
+                "__inst_5b4d0c00_0_0_1n"
+            ],
+            [
+                {
+                    "__m": "__inst_1de146dc_0_0_0B"
+                },
+                {
+                    "__m": "__elem_ec77afbd_0_0_F\/"
+                },
+                {
+                    "__m": "__inst_5b4d0c00_0_0_1n"
+                },
+                []
+            ],
+            2
+        ],
+        [
+            "__inst_1de146dc_0_0_0B",
+            [
+                "Popover",
+                "__elem_1de146dc_0_0_w5",
+                "__elem_ec77afbd_0_0_F\/",
+                "ContextualLayerAutoFlip",
+                "ContextualDialogArrow"
+            ],
+            [
+                {
+                    "__m": "__elem_1de146dc_0_0_w5"
+                },
+                {
+                    "__m": "__elem_ec77afbd_0_0_F\/"
+                },
+                [
+                    {
+                        "__m": "ContextualLayerAutoFlip"
+                    },
+                    {
+                        "__m": "ContextualDialogArrow"
+                    }
+                ],
+                {
+                    "alignh": "left",
+                    "position": "below"
+                }
+            ],
+            2
+        ],
+        [
+            "__inst_1de146dc_0_1_Tq",
+            [
+                "Popover",
+                "__elem_1de146dc_0_1_uA",
+                "__elem_ec77afbd_0_1_Yi",
+                "ContextualLayerAutoFlip",
+                "ContextualDialogArrow"
+            ],
+            [
+                {
+                    "__m": "__elem_1de146dc_0_1_uA"
+                },
+                {
+                    "__m": "__elem_ec77afbd_0_1_Yi"
+                },
+                [
+                    {
+                        "__m": "ContextualLayerAutoFlip"
+                    },
+                    {
+                        "__m": "ContextualDialogArrow"
+                    }
+                ],
+                {
+                    "alignh": "right",
+                    "position": "below"
+                }
+            ],
+            2
+        ]
+    ],
+    "markup": [
+        [
+            "__markup_c8cf307a_0_0_oh",
+            {
+                "__html": "When people are forced to flee their homes, UNHCR is there to help resilient refugees rebuild their lives. Will you join us? \u003Cbr \/> \u003Cbr \/> Every month, your ongoing support will provide clean water, food, shelter and protection to families in need around the world."
+            },
+            1
+        ],
+        [
+            "__markup_3310c079_0_0_Mk",
+            {
+                "__html": "Keyboard shortcut help..."
+            },
+            1
+        ],
+        [
+            "__markup_3310c079_0_1_lG",
+            {
+                "__html": "Accessibility Help Centre"
+            },
+            1
+        ],
+        [
+            "__markup_3310c079_0_2_5b",
+            {
+                "__html": "Submit feedback"
+            },
+            1
+        ],
+        [
+            "__markup_3310c079_0_3_RO",
+            {
+                "__html": "Updates from Facebook Accessibility"
+            },
+            1
+        ]
+    ],
+    "elements": [
+        [
+            "__elem_a588f507_0_1_Bw",
+            "u_0_2_nm",
+            1
+        ],
+        [
+            "__elem_3fc3da18_0_0_aM",
+            "u_0_3_ji",
+            1
+        ],
+        [
+            "__elem_51be6cb7_0_0_Bq",
+            "u_0_4_g+",
+            1
+        ],
+        [
+            "__elem_1de146dc_0_0_w5",
+            "u_0_5_E8",
+            1
+        ],
+        [
+            "__elem_ec77afbd_0_0_F\/",
+            "u_0_6_kT",
+            2
+        ],
+        [
+            "__elem_1de146dc_0_1_uA",
+            "u_0_7_3V",
+            1
+        ],
+        [
+            "__elem_ec77afbd_0_1_Yi",
+            "u_0_8_dF",
+            2
+        ],
+        [
+            "__elem_a588f507_0_0_eb",
+            "globalContainer",
+            2
+        ],
+        [
+            "__elem_a588f507_0_2_YT",
+            "content",
+            1
+        ],
+        [
+            "__elem_fc9f538f_0_0_wN",
+            "u_0_9_g4",
+            1
+        ]
+    ],
+    "require": [
+        [
+            "WebPixelRatioDetector",
+            "startDetecting",
+            [],
+            [
+                false
+            ]
+        ],
+        [
+            "ScriptPath",
+            "set",
+            [],
+            [
+                "XAdArchiveAdRendererController",
+                "a1f3c513",
+                {
+                    "imp_id": "0NsyT7XDeYqwdhXU5",
+                    "ef_page": null,
+                    "uri": "https:\/\/web.facebook.com\/ads\/archive\/render_ad\/?id=367957494996119&access_token=--sanitized--",
+                    "entity_id": "367957494996119"
+                }
+            ]
+        ],
+        [
+            "HostnameRewriter",
+            "registerInternetDotOrgFilters",
+            [],
+            [
+                "facebook.com",
+                true
+            ]
+        ],
+        [
+            "UITinyViewportAction",
+            "init",
+            [],
+            []
+        ],
+        [
+            "ResetScrollOnUnload",
+            "init",
+            [
+                "__elem_a588f507_0_0_eb"
+            ],
+            [
+                {
+                    "__m": "__elem_a588f507_0_0_eb"
+                }
+            ]
+        ],
+        [
+            "AccessibilityWebVirtualCursorClickLogger",
+            "init",
+            [
+                "__elem_a588f507_0_0_eb"
+            ],
+            [
+                [
+                    {
+                        "__m": "__elem_a588f507_0_0_eb"
+                    }
+                ]
+            ]
+        ],
+        [
+            "KeyboardActivityLogger",
+            "init",
+            [],
+            []
+        ],
+        [
+            "FocusRing",
+            "init",
+            [],
+            []
+        ],
+        [
+            "ErrorMessageConsole",
+            "listenForUncaughtErrors",
+            [],
+            []
+        ],
+        [
+            "HardwareCSS",
+            "init",
+            [],
+            []
+        ],
+        [
+            "NavigationAssistantController",
+            "init",
+            [
+                "__elem_3fc3da18_0_0_aM",
+                "__elem_51be6cb7_0_0_Bq",
+                "__inst_5b4d0c00_0_0_1n",
+                "__inst_5b4d0c00_0_1_vx",
+                "__inst_e5ad243d_0_0_yl",
+                "__inst_e5ad243d_0_1_4d"
+            ],
+            [
+                {
+                    "__m": "__elem_3fc3da18_0_0_aM"
+                },
+                {
+                    "__m": "__elem_51be6cb7_0_0_Bq"
+                },
+                {
+                    "__m": "__inst_5b4d0c00_0_0_1n"
+                },
+                {
+                    "__m": "__inst_5b4d0c00_0_1_vx"
+                },
+                null,
+                {
+                    "accessibilityPopoverMenu": {
+                        "__m": "__inst_e5ad243d_0_0_yl"
+                    },
+                    "globalPopoverMenu": null,
+                    "sectionsPopoverMenu": {
+                        "__m": "__inst_e5ad243d_0_1_4d"
+                    }
+                }
+            ]
+        ],
+        [
+            "__inst_e5ad243d_0_1_4d"
+        ],
+        [
+            "__inst_1de146dc_0_0_0B"
+        ],
+        [
+            "__inst_e5ad243d_0_0_yl"
+        ],
+        [
+            "__inst_1de146dc_0_1_Tq"
+        ],
+        [
+            "ReactRenderer",
+            "constructAndRenderComponentIntoComment_DO_NOT_USE",
+            [
+                "AdLibraryV2DemoAd.react",
+                "__markup_c8cf307a_0_0_oh",
+                "HTML",
+                "__elem_fc9f538f_0_0_wN"
+            ],
+            [
+                {
+                    "constructor": {
+                        "__m": "AdLibraryV2DemoAd.react"
+                    },
+                    "concurrentRootOptions": null,
+                    "props": {
+                        "adCard": {
+                            "adid": 0,
+                            "adArchiveID": 367957494996119,
+                            "archiveTypes": [
+                                1
+                            ],
+                            "categories": [
+                                1
+                            ],
+                            "collationCount": null,
+                            "collationID": 396906601793813,
+                            "currency": "USD",
+                            "endDate": 1629961200,
+                            "entityType": "regular_page",
+                            "fevInfo": {
+                                "authorized_entity_text": "This information was confirmed using an employer identification number (EIN).",
+                                "email": "agoldsmith\u0040unrefugees.org",
+                                "phone": "+12027921145",
+                                "website": "http:\/\/www.unrefugees.org\/",
+                                "submitted_on": "Submitted on 1 Oct 2019",
+                                "address": "1310 L St NW, Washington, DC 20005-4383, US",
+                                "fec_additional_info": null,
+                                "learn_more_content": {
+                                    "help_center_text": "Visit the Help Centre to learn about what we require from advertisers to run ads about social issues, elections or politics.",
+                                    "help_center_url": "https:\/\/web.facebook.com\/help\/180607332665293?ref=infosheet",
+                                    "learn_more_text": "Learn more"
+                                },
+                                "free_form_additional_info": null,
+                                "page_admin_additional_info": null
+                            },
+                            "gatedType": "eligible",
+                            "hiddenSafetyData": false,
+                            "hideDataStatus": "NONE",
+                            "impressionsWithIndex": {
+                                "impressionsText": "\u003C1K",
+                                "impressionsIndex": 0
+                            },
+                            "isActive": true,
+                            "isProfilePage": false,
+                            "pageID": 38235851310,
+                            "pageInfo": null,
+                            "pageIsDeleted": false,
+                            "pageName": "USA for UNHCR",
+                            "politicalCountries": [
+                                "US"
+                            ],
+                            "reachEstimate": ">1M people",
+                            "reportCount": null,
+                            "snapshot": {
+                                "ad_creative_id": 6266982994653,
+                                "cards": [],
+                                "body_translations": {},
+                                "byline": "UNITED STATES ASSOCIATION FOR UNHCR",
+                                "caption": "UNrefugees.org\/Donate",
+                                "cta_text": "Donate Now",
+                                "dynamic_item_flags": {},
+                                "dynamic_versions": null,
+                                "edited_snapshots": [],
+                                "effective_authorization_category": "POLITICAL",
+                                "event": [],
+                                "extra_images": [],
+                                "extra_links": [],
+                                "extra_texts": [],
+                                "extra_videos": [],
+                                "instagram_shopping_products": [],
+                                "display_format": "video",
+                                "title": "Give Monthly, Give Support",
+                                "link_description": null,
+                                "link_url": "https:\/\/ad.doubleclick.net\/ddm\/socialclk?ds_aid=700000001790928&ds_e_ca_id=6204879338053&ds_e_ag_id=6204879461053&ds_e_ad_id=6266978869053&ds_e_ca_name=MRUNHCRU.2006.FR.S.Facebook.Prospecting.Lookalike\u00252C+Interest+Acquisition.Broad+Audiences...XD.Campaign&ds_e_ag_name=MRUNHCRU.2006.FR.S.Facebook.LAL+Acquisition.LAL+Muslim+and+Ramadan+Donors....XD.Ad+Set&ds_e_ad_name=MRUNHCRU.2107.Evergreen.Support+Refugees+Each+Month.Will+You+Join+Us.Monthly.Donate+Now.Animated...Video&ds_sig=LVrTqhnMKapb_g&ds_dest_url=https\u00253A\u00252F\u00252Fgive.unrefugees.org\u00252F180413core_evergrn_p_3000\u00252F\u00253FSF_onetime\u00253D7011K000001GHAzQAO\u002526SF_monthly\u00253D7011K000001GHB4QAO\u002526utm_medium\u00253Dsocial\u002526utm_source\u00253Dfacebook\u002526utm_campaign\u00253DUS_PS_EN_Core_LinkAds",
+                                "page_welcome_message": null,
+                                "images": [],
+                                "videos": [
+                                    {
+                                        "video_hd_url": "https:\/\/video.flos1-1.fna.fbcdn.net\/v\/t42.1790-2\/240697188_367957518329450_98690040509849068_n.?_nc_cat=102&ccb=1-5&_nc_sid=cf96c8&_nc_ohc=PCk1SyOis3QAX-an2Vu&_nc_ht=video.flos1-1.fna&oh=2807f5a3fb9e2abf047fa88afe413e16&oe=6128E7B1",
+                                        "video_sd_url": "https:\/\/video.flos1-2.fna.fbcdn.net\/v\/t42.1790-2\/207390440_1014264189409918_2025399701736172577_n.mp4?_nc_cat=100&ccb=1-5&_nc_sid=cf96c8&_nc_ohc=JnchVVlAcDcAX9b4vA0&_nc_ht=video.flos1-2.fna&oh=391f719def8d4c90be194c7071673862&oe=6128EE59",
+                                        "video_preview_image_url": "https:\/\/scontent.flos1-1.fna.fbcdn.net\/v\/t39.35426-6\/240731157_851429339140423_6350474435787318036_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=cf96c8&_nc_ohc=SsmtTYLYZ7gAX_WJHFi&_nc_ht=scontent.flos1-1.fna&oh=1399a5e3a95a239ff90e10e06c34cadc&oe=612E2485"
+                                    }
+                                ],
+                                "creation_time": 1629960439,
+                                "page_id": 38235851310,
+                                "page_name": "USA for UNHCR",
+                                "page_profile_picture_url": "https:\/\/scontent.flos1-2.fna.fbcdn.net\/v\/t39.35426-6\/s60x60\/240670325_372456744372952_4181787998709323166_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cf96c8&_nc_ohc=oGs-6euxyScAX9qnoH9&_nc_ht=scontent.flos1-2.fna&oh=dea2097fc62d0f90755ca2d705a59888&oe=612E6405",
+                                "page_categories": {
+                                    "226326230802065": "Organization",
+                                    "2603": "Nonprofit Organization",
+                                    "2235": "Non-Governmental Organization (NGO)"
+                                },
+                                "page_entity_type": "regular_page",
+                                "page_is_profile_page": false,
+                                "instagram_actor_name": "USA for UNHCR",
+                                "instagram_profile_pic_url": "https:\/\/scontent.flos1-2.fna.fbcdn.net\/v\/t39.35426-6\/240709109_356381779360902_2517272940071567314_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=cf96c8&_nc_ohc=DXjuLPYkpuMAX9pziYc&_nc_oc=AQnwVgi-PO50fySVQMfatFeRDOUjJeFWKD1g_S8Mk7jrl95qT1zUEBst0Zzk5-7usSk&_nc_ht=scontent.flos1-2.fna&oh=d245bf99f17ac8b098d66d48b48569b2&oe=612E3ADD",
+                                "instagram_url": "",
+                                "instagram_handle": "",
+                                "is_reshared": false,
+                                "version": 3,
+                                "body": {
+                                    "__m": "__markup_c8cf307a_0_0_oh"
+                                },
+                                "brazil_tax_id": "",
+                                "branded_content": null,
+                                "current_page_name": "USA for UNHCR",
+                                "disclaimer_label": 1,
+                                "page_like_count": 80040,
+                                "page_profile_uri": "https:\/\/web.facebook.com\/UNREFUGEES\/",
+                                "page_is_deleted": false,
+                                "root_reshared_post": null,
+                                "cta_type": "DONATE_NOW",
+                                "additional_info": {
+                                    "treasurer_name": null,
+                                    "director_name": null,
+                                    "point_of_contact": null,
+                                    "committee_id": null,
+                                    "phone_number": null,
+                                    "email": null,
+                                    "website": null,
+                                    "street_address_1": null,
+                                    "street_address_2": null,
+                                    "city": null,
+                                    "state": null,
+                                    "zipcode": null,
+                                    "corporate_purpose": null
+                                },
+                                "ec_certificates": null,
+                                "country_iso_code": "US",
+                                "instagram_branded_content": null
+                            },
+                            "spend": "\u003C$100",
+                            "startDate": 1629961200,
+                            "stateMediaRunLabel": null,
+                            "publisherPlatform": [
+                                "facebook",
+                                "instagram"
+                            ],
+                            "menuItems": []
+                        },
+                        "size": "large",
+                        "isMobile": false
+                    },
+                    "dummyElem": {
+                        "__m": "__elem_fc9f538f_0_0_wN"
+                    },
+                    "acrossTransitions": false,
+                    "clobberSiblings": false,
+                    "preloader": null,
+                    "bigPipeContext": {
+                        "__bigPipeContext": 1
+                    },
+                    "nonBlockingPreloaders": null
+                }
+            ]
+        ],
+        [
+            "Animation"
+        ],
+        [
+            "PageTransitions"
+        ],
+        [
+            "CometSuspenseFalcoEvent"
+        ],
+        [
+            "ContextualConfig"
+        ],
+        [
+            "BladeRunnerClient"
+        ],
+        [
+            "SkywalkerUtils"
+        ],
+        [
+            "FleetBeaconSubscriptionLauncher"
+        ],
+        [
+            "MqttLongPollingRunner"
+        ],
+        [
+            "DGWRequestStreamClient"
+        ],
+        [
+            "RequireDeferredReference",
+            "unblock",
+            [],
+            [
+                [
+                    "BanzaiScuba_DEPRECATED",
+                    "Animation",
+                    "FbtLogging",
+                    "IntlQtEventFalcoEvent",
+                    "PageTransitions",
+                    "CometSuspenseFalcoEvent",
+                    "ContextualConfig",
+                    "BladeRunnerClient",
+                    "SkywalkerUtils",
+                    "FleetBeaconSubscriptionLauncher",
+                    "MqttLongPollingRunner",
+                    "DGWRequestStreamClient"
+                ],
+                "sd"
+            ]
+        ],
+        [
+            "RequireDeferredReference",
+            "unblock",
+            [],
+            [
+                [
+                    "BanzaiScuba_DEPRECATED",
+                    "Animation",
+                    "FbtLogging",
+                    "IntlQtEventFalcoEvent",
+                    "PageTransitions",
+                    "CometSuspenseFalcoEvent",
+                    "ContextualConfig",
+                    "BladeRunnerClient",
+                    "SkywalkerUtils",
+                    "FleetBeaconSubscriptionLauncher",
+                    "MqttLongPollingRunner",
+                    "DGWRequestStreamClient"
+                ],
+                "css"
+            ]
+        ],
+        [
+            "TimeSliceImpl"
+        ],
+        [
+            "HasteSupportData"
+        ],
+        [
+            "ServerJS"
+        ],
+        [
+            "Run"
+        ],
+        [
+            "InitialJSLoader"
+        ]
+    ],
+    "contexts": [
+        [
+            {
+                "__m": "__elem_a588f507_0_1_Bw"
+            },
+            true
+        ],
+        [
+            {
+                "__m": "__elem_a588f507_0_2_YT"
+            },
+            true
+        ]
+    ]
+}
