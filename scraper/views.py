@@ -18,6 +18,11 @@ from rest_framework.response import Response
 DIR = Path(__file__).resolve().parent
 newFilePath = Path.joinpath(DIR, "ads_archive.json")
 
+# EAAN04fZCp9g8BAL6ZBZAYzL8PtoISYpqsAWdlMaBRtlJwTPDOwqjgpRWi8JZChZCPUQ9D00IKaP
+# Gcko0MpxAwilNTY2mS1pPo7f5KPASTYdnZBOAmv5oojAN
+# cAlvvA14dL0bXplQN8o60Ms8mZB9mr1vYpZBoZCcIS2lAa6R4SE
+# XcKsqZASwWrBBKakVGjvlZASSUAWgSZBBnZCFZB2U0LWTOJhEnZC
+
 
 def scrape_fb_ad(html, adId: Ad):
     # f = open("oo-html.html", 'w')
