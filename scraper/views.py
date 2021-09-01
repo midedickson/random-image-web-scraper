@@ -20,9 +20,9 @@ newFilePath = Path.joinpath(DIR, "ads_archive.json")
 
 
 def scrape_fb_ad(html, adId: Ad):
-    f = open("oo-html.html", 'w')
-    f.write(html)
-    f.close()
+    # f = open("oo-html.html", 'w')
+    # f.write(html)
+    # f.close()
     try:
         Ad.objects.get(ad_id=adId)
     except Ad.DoesNotExist:
@@ -64,7 +64,7 @@ def get_all_ads(request):
             {
                 "id": ads.ad_id,
                 "body": ads.ad_body,
-                "info": ads.ad_info
+                "info": eval(ads.ad_info)
             }
         )
     return Response({"data": data}, status=200)
